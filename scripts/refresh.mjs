@@ -20,7 +20,7 @@ const images=JSON.parse(await readFile(path.join(root,'config/images.json'),'utf
 const manual=JSON.parse(await readFile(path.join(root,'config/evidence.json'),'utf8')).entries;
 const scope=JSON.parse(await readFile(path.join(root,'config/scope.json'),'utf8'));
 const generatedAt=new Date().toISOString();const warnings=[];let projects=[];
-let previousImages={};try{const previous=JSON.parse(await readFile(path.join(root,'dist/data/projects.json'),'utf8'));for(const p of previous.projects)for(const i of p.images)previousImages[i.image]=i;}catch{}
+let previousImages={},previousScopes={};try{const previous=JSON.parse(await readFile(path.join(root,'dist/data/projects.json'),'utf8'));for(const p of previous.projects){previousScopes[p.repo]={signals:p.phpSignals||[],...p.scopeCheck};for(const i of p.images)previousImages[i.image]=i;}}catch{}
 const catalogueSha=git('-C',catalogue,'rev-parse','HEAD');
 for(const file of await readdir(path.join(catalogue,'software'))){
   if(!/\.ya?ml$/.test(file))continue;
@@ -34,7 +34,7 @@ for(const p of projects){
   const exclusion=scope.exclusions.find(e=>e.repo.toLowerCase()===p.repo?.toLowerCase());
   const signals=p.php&&!exclusion?[{...p.phpEvidence,kind:'declared'}]:[];
   if(exclusion)p.scopeExclusion=exclusion;
-  const discovery=discovered[p.repo];if(discovery){signals.push(...(discovery.signals||[]));p.scopeCheck={checkedAt:discovery.checkedAt,coverage:discovery.coverage,truncated:discovery.truncated,errors:discovery.errors};}
+  const discovery=discovered[p.repo]?.checkedAt?discovered[p.repo]:previousScopes[p.repo];if(discovery){signals.push(...(discovery.signals||[]));p.scopeCheck={checkedAt:discovery.checkedAt,coverage:discovery.coverage,truncated:discovery.truncated,errors:discovery.errors};}
   applyPhpSignals(p,signals);
 }
 // Check actual runtime requirements or a PHP web entrypoint. Catalogue claims remain labelled when not independently verified.
@@ -58,7 +58,7 @@ for(const f of await readdir(path.join(ncsc,'software'))){if(!/^software_list_.*
     p.evidence.push({type:'ncsc',status:p.status,scope:'Product / runtime guidance; does not verify a Docker image digest',version:cells[2]||null,notes:cleanText(cells[5]),source:`https://github.com/NCSC-NL/php2shell/blob/${ncscSha}/software/${f}`,sources:links,checkedAt:generatedAt,cves:advisory.cves});
   }
 }
-for(const p of projects){const refs=[...images.filter(i=>i.repo?.toLowerCase()===p.repo?.toLowerCase()||i.name===p.name),...(discovered[p.repo]?.images||[])];p.images=[...new Map(refs.map(i=>[i.image,{...previousImages[i.image],...i,status:'unverified',checkedAt:previousImages[i.image]?.checkedAt||null}])).values()];p.releaseStatus=p.status;applyEvidence(p,manual);}
+for(const p of projects){const refs=[...(discovered[p.repo]?.images||[]).map(i=>({...i,role:'companion'})),...images.filter(i=>i.repo?.toLowerCase()===p.repo?.toLowerCase()||i.name===p.name).map(i=>({...i,role:'primary'}))];p.images=[...new Map(refs.map(i=>[i.image,{...previousImages[i.image],...i,status:'unverified',checkedAt:previousImages[i.image]?.checkedAt||null}])).values()];p.releaseStatus=p.status;applyEvidence(p,manual);}
 let apiCache={};try{apiCache=JSON.parse(await readFile(path.join(cache,'github.json'),'utf8'))}catch{}
 let requests=0,rateLimited=false;
 async function gh(endpoint){
@@ -92,7 +92,7 @@ let verified=null;try{verified=JSON.parse(await readFile(path.join(root,'dist/da
 applyVerification({projects},verified);
 projects.sort((a,b)=>(b.stars??-1)-(a.stars??-1)||a.name.localeCompare(b.name));let rank=0;for(const p of projects)p.rank=p.repo&&p.stars!==null?++rank:null;
 const stats={catalogued:projects.length,githubRanked:rank,php:projects.filter(p=>p.php).length,patched:projects.filter(p=>p.php&&p.status==='patched').length,pending:projects.filter(p=>p.php&&p.status==='pending').length,review:projects.filter(p=>p.php&&p.status==='review').length,images:projects.filter(p=>p.php).reduce((n,p)=>n+p.images.length,0)};
-stats.sourceTreesChecked=Object.values(discovered).filter(d=>d.checkedAt).length;
+stats.sourceTreesChecked=projects.filter(p=>p.repo&&p.scopeCheck?.checkedAt).length;
 const imageStats=verificationCounts({projects});Object.assign(stats,{fixedImages:imageStats.fixed,affectedImages:imageStats.affected,scanErrors:imageStats.errors,scanningImages:imageStats.scanning,vendorFixes:projects.filter(p=>p.vendorStatus==='patched').length});
 if(rank<1000)throw new Error(`Only ${rank} ranked GitHub projects; refusing to publish an incomplete 1,000-project catalogue.`);
 const data={schemaVersion:1,generatedAt,advisory,stats,sources:{catalogue:{url:'https://github.com/awesome-selfhosted/awesome-selfhosted-data',commit:git('-C',catalogue,'rev-parse','HEAD'),license:'CC-BY-SA-3.0'},ncsc:{url:'https://github.com/NCSC-NL/php2shell',commit:ncscSha,license:'EUPL-1.2'}},refresh:{offline,githubRequests:requests,budget,warnings},projects};

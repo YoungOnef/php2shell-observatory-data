@@ -32,7 +32,7 @@ echo preg_replace('/^.*?\r?\n\r?\n/s','',$out);
 PROBE = r'''
 set -eu
 P=$(command -v php || command -v php85 || command -v php84 || command -v php83 || command -v php82 || command -v php81)
-printf '\nAUDIT_CLI\n'; "$P" -r 'echo json_encode(array("version"=>PHP_VERSION,"sapi"=>PHP_SAPI,"binary"=>PHP_BINARY));'
+printf '\nAUDIT_CLI\n'; "$P" -n -r 'echo json_encode(array("version"=>PHP_VERSION,"sapi"=>PHP_SAPI,"binary"=>PHP_BINARY));'
 printf '\nAUDIT_OS\n'; cat /etc/os-release
 printf '\nAUDIT_PACKAGES\n'
 if command -v apk >/dev/null; then apk info -v | grep -E '^php[0-9]*[-0-9]' || true; fi
@@ -63,7 +63,7 @@ SetHandler application/x-httpd-php
 EOF
   apache2 -f /tmp/audit-apache.conf -DFOREGROUND >/tmp/audit-server.log 2>&1 &
   sleep 2
-  "$P" -r '$s=@file_get_contents("http://127.0.0.1:8080/info.php"); if(!$s)exit(2); echo $s;' || { cat /tmp/audit-server.log; exit 2; }
+  "$P" -n -r '$s=fsockopen("127.0.0.1",8080,$e,$m,5);if(!$s)exit(2);fwrite($s,"GET /info.php HTTP/1.0\r\nHost: localhost\r\nConnection: close\r\n\r\n");$r=stream_get_contents($s);echo preg_replace("/^.*?\r?\n\r?\n/s","",$r);'  || { cat /tmp/audit-server.log; exit 2; }
 else
   F=''; for f in php-fpm php-fpm85 php-fpm84 php-fpm83 php-fpm82 php-fpm81; do if command -v "$f" >/dev/null; then F=$(command -v "$f"); break; fi; done
   if [ -n "$F" ]; then
@@ -82,7 +82,9 @@ security.limit_extensions = .php
 EOF
     "$F" -F -y /tmp/audit-fpm.conf >/tmp/audit-server.log 2>&1 &
     sleep 2
-    "$P" /audit/fcgi.php || { cat /tmp/audit-server.log; exit 2; }
+    "$P" -n /audit/fcgi.php || { cat /tmp/audit-server.log; exit 2; }
+  elif command -v php-cgi >/dev/null; then
+    REDIRECT_STATUS=1 REQUEST_METHOD=GET SCRIPT_FILENAME=/audit/info.php php-cgi -n | sed '1,/^\r*$/d'
   else
     printf 'No separate Apache module or FPM binary. The image uses the CLI binary.\n'
     printf '\nAUDIT_APP_RUNTIME\n'

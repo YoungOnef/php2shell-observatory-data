@@ -1,4 +1,5 @@
 [
+  {"repo":"shlinkio/shlink","image":"shlinkio/shlink:latest","publisher":"Shlink official image","source":"https://shlink.io/documentation/install-docker/","role":"primary"},
   {"repo":"nextcloud/server","image":"nextcloud:latest","publisher":"Docker Official Image","source":"https://github.com/nextcloud/docker"},
   {"repo":"nextcloud/all-in-one","image":"ghcr.io/nextcloud-releases/aio-nextcloud:latest","publisher":"Nextcloud AIO","source":"https://github.com/nextcloud/all-in-one"},
   {"repo":"WordPress/WordPress","image":"wordpress:latest","publisher":"Docker Official Image","source":"https://github.com/docker-library/wordpress"},

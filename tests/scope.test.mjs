@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {applyPhpSignals,detectPhp,phpImage} from '../scripts/php-scope.mjs';
+import {applyVerification} from '../dist/auto-results.js';
+import {assessRuntime} from '../scripts/runtime.mjs';
+import {parseProbeSection} from '../scripts/web-probe.mjs';
+test('web evidence parser separates actual responses from package output',()=>{const log='\nAUDIT_PACKAGES\nphp85-8.5.12-r0\nAUDIT_WEB\n{"version":"8.5.12","sapi":"fpm-fcgi"}\nAUDIT_DONE\n';assert.equal(JSON.parse(parseProbeSection(log,'WEB')).sapi,'fpm-fcgi');assert.equal(parseProbeSection(log,'PACKAGES'),'php85-8.5.12-r0');});
+test('a mainly Python project is included if a PHP service exists',()=>{const p={platforms:['Python'],php:false};const signals=detectPhp('compose.yml','services:\n  app:\n    image: python:3.13\n  portal:\n    image: php:8.3-fpm\n');applyPhpSignals(p,signals);assert.equal(p.php,true);assert.equal(p.phpSignals[0].service,'portal');});
+test('nested PHP components and development tooling remain distinguishable',()=>{assert.equal(detectPhp('backend/composer.json','{"require":{"php":"^8.3"}}')[0].kind,'runtime');assert.equal(detectPhp('tests/fixture.php','<?php echo 1;')[0].kind,'development');assert.equal(detectPhp('examples/composer.json','{"require-dev":{"phpunit/phpunit":"^11"}}')[0].kind,'development');});
+test('Python alone and a PHP-named JavaScript parser do not prove a PHP runtime',()=>{assert.equal(phpImage('python:3.13'),false);assert.deepEqual(detectPhp('package.json','{"dependencies":{"php-parser":"1"}}'),[]);});
+test('one below-fixed image prevents a project-wide fixed verdict',()=>{const d={projects:[{php:true,images:[{image:'a'},{image:'b'}]}]};applyVerification(d,{images:{a:{status:'fixed'},b:{status:'affected'}}});assert.equal(d.projects[0].status,'affected');});
+test('a companion warning must not be attributed to a fixed published project image',()=>{const d={projects:[{php:true,images:[{image:'shlink',role:'primary'},{image:'matomo',role:'companion'}]}]};applyVerification(d,{images:{shlink:{status:'fixed'},matomo:{status:'affected'}}});assert.equal(d.projects[0].status,'fixed');assert.equal(d.projects[0].companionWarnings,1);assert.equal(d.projects[0].verdictScope,'Published project image');});
+test('a PHP companion remains in scope even without a primary PHP image',()=>{const d={projects:[{php:true,images:[{image:'portal',role:'companion'}]}]};applyVerification(d,{images:{portal:{status:'affected'}}});assert.equal(d.projects[0].status,'affected');assert.equal(d.projects[0].verdictScope,'PHP component images');});
+test('inspection failures are not fixed or affected verdicts',()=>{const d={projects:[{php:true,images:[{image:'a'}]}]};applyVerification(d,{images:{a:{status:'scan-error'}}});assert.equal(d.projects[0].status,'scan-error');});
+test('legacy runtimes and release candidates receive an update recommendation',()=>{const a={fixed:{'8.3':'8.3.36'}};for(const v of ['8.1.32','8.0.30','8.3.0RC6','8.3.36RC1'])assert.equal(assessRuntime(v,a).status,'below-fixed');assert.equal(assessRuntime('8.3.36',a).status,'patched');});
