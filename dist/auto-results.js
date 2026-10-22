@@ -6,6 +6,7 @@ export function applyVerification(data,report){
     p.vendorStatus??=p.status;
     if(!p.php){p.status='excluded';continue;}
     for(const image of p.images){const result=report?.images?.[image.image];image.verification=result||null;image.status=result?.status||'scanning';}
+    p.images.sort((a,b)=>Number(b.role==='primary')-Number(a.role==='primary'));
     if(!p.images.length){p.status=['component','development'].includes(p.phpScope)?'component-only':'runtime-external';continue;}
     const primary=p.images.filter(i=>i.role==='primary');
     p.verdictScope=primary.length?'Published project image':'PHP component images';

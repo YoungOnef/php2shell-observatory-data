@@ -1,6 +1,11 @@
 name: Verify published PHP images
 on:
   workflow_dispatch:
+    inputs:
+      images:
+        description: Optional comma-separated mapped images to recheck
+        required: false
+        default: ''
   schedule:
     - cron: '37 */6 * * *'
 permissions:
@@ -14,11 +19,15 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
       - name: Query actual published PHP runtimes in isolated containers
-        run: node scripts/verify-images.mjs --limit 60
+        run: node scripts/verify-images.mjs --limit 60 --images "$ONLY_IMAGES"
+        env:
+          ONLY_IMAGES: ${{ inputs.images }}
       - name: Publish automatic results
         if: always()
         run: |
@@ -28,6 +37,7 @@ jobs:
             git add dist/data/verified-images.json
             if ! git diff --cached --quiet; then
               git commit -m 'Publish automated PHP runtime verification'
+              git pull --rebase
               git push
             fi
           fi

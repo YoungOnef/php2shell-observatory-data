@@ -101,7 +101,7 @@ Sources: [PHP advisory](https://www.php.net/archive/2026.php#2026-10-21-5), [fir
 
 The dashboard imports exact product-name matches from NCSC-NL's published software tables. Both CVE columns must say `Fix` before a scoped fix is shown. Those tables are generated upstream from its SPDX/VEX inventory. Evidence links pin the source commit and include vendor references and complete scope notes. A pending record means no imported fix confirmation, not confirmed vulnerability. Entries may cover a particular build, runtime, distribution, or container family. Always read the detail.
 
-An application release does not establish that its PHP runtime was updated. PHP version checks cannot establish whether an older version has a vendor backport. Older branches, future branches, prereleases and ambiguous version strings remain unknown until verified. Edit `config/advisory.json` only after checking upstream advisories.
+An application release does not establish that its PHP runtime was updated. PHP version checks cannot establish whether an older version has a vendor backport. The published-image scanner recommends an update for unsupported or prerelease builds, with the reason recorded. Ambiguous builds and branches without a verified fix threshold produce inspection errors. An update recommendation is not proof of exploitability, and vendor backports require separate package evidence. Edit `config/advisory.json` only after checking upstream advisories.
 
 Reviewed evidence can be added to `config/evidence.json`:
 

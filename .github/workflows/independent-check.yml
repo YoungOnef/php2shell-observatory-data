@@ -12,6 +12,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
       - name: Query independent PHP web SAPIs and collect package evidence
         run: python3 scripts/independent-check.py
       - name: Publish evidence
@@ -22,5 +24,6 @@ jobs:
           if test -f dist/data/independent-spot-check.json; then
             git add dist/data/independent-spot-check.json
             git commit -m 'Publish independent image spot check evidence'
+            git pull --rebase
             git push
           fi

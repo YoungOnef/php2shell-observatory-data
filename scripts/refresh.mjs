@@ -20,7 +20,7 @@ const images=JSON.parse(await readFile(path.join(root,'config/images.json'),'utf
 const manual=JSON.parse(await readFile(path.join(root,'config/evidence.json'),'utf8')).entries;
 const scope=JSON.parse(await readFile(path.join(root,'config/scope.json'),'utf8'));
 const generatedAt=new Date().toISOString();const warnings=[];let projects=[];
-let previousImages={},previousScopes={};try{const previous=JSON.parse(await readFile(path.join(root,'dist/data/projects.json'),'utf8'));for(const p of previous.projects){previousScopes[p.repo]={signals:p.phpSignals||[],...p.scopeCheck};for(const i of p.images)previousImages[i.image]=i;}}catch{}
+let previousImages={},previousScopes={},previousProjects={};try{const previous=JSON.parse(await readFile(path.join(root,'dist/data/projects.json'),'utf8'));for(const p of previous.projects){previousProjects[p.repo]=p;previousScopes[p.repo]={signals:p.phpSignals||[],...p.scopeCheck};for(const i of p.images)previousImages[i.image]=i;}}catch{}
 const catalogueSha=git('-C',catalogue,'rev-parse','HEAD');
 for(const file of await readdir(path.join(catalogue,'software'))){
   if(!/\.ya?ml$/.test(file))continue;
@@ -31,6 +31,9 @@ for(const file of await readdir(path.join(catalogue,'software'))){
 }
 let discovered={};try{discovered=JSON.parse(await readFile(path.join(cache,'scope.json'),'utf8'))}catch{}
 for(const p of projects){
+  const prior=previousProjects[p.repo];
+  if(prior?.starsSource?.startsWith('GitHub API')&&new Date(prior.starsCheckedAt)>new Date(p.starsCheckedAt||0)){for(const k of ['stars','starsCheckedAt','starsSource','archived'])p[k]=prior[k];}
+  if(prior?.release&&(!p.release||new Date(prior.release.publishedAt)>=new Date(p.release.publishedAt)))p.release=prior.release;
   const exclusion=scope.exclusions.find(e=>e.repo.toLowerCase()===p.repo?.toLowerCase());
   const signals=p.php&&!exclusion?[{...p.phpEvidence,kind:'declared'}]:[];
   if(exclusion)p.scopeExclusion=exclusion;

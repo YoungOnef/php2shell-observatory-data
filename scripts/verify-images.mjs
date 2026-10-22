@@ -6,10 +6,13 @@ import {fileURLToPath} from 'node:url';
 import {inspectRegistry} from './registry.mjs';
 import {assessRuntime} from './runtime.mjs';
 import {inspectWebRuntime} from './web-probe.mjs';
+import {createHash} from 'node:crypto';
 const run=promisify(execFile);const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const data=JSON.parse(await readFile(path.join(root,'dist/data/projects.json'),'utf8'));const advisory=JSON.parse(await readFile(path.join(root,'config/advisory.json'),'utf8'));
-let previous={};try{previous=JSON.parse(await readFile(path.join(root,'dist/data/verified-images.json'),'utf8')).images||{}}catch{}
+const advisoryKey=createHash('sha256').update(JSON.stringify(advisory)).digest('hex');
+let previous={},previousAdvisoryKey;try{const report=JSON.parse(await readFile(path.join(root,'dist/data/verified-images.json'),'utf8'));previous=report.images||{};previousAdvisoryKey=report.advisoryKey;}catch{}
 const args=process.argv.slice(2),limit=Number(args.includes('--limit')?args[args.indexOf('--limit')+1]:'60');
+const selected=args.includes('--images')?args[args.indexOf('--images')+1]?.split(',').map(s=>s.trim()).filter(Boolean):null;
 const probe=`set -u
 for b in /usr/bin/real_php php php85 php84 php83 php82 php81 php80 php74 /usr/bin/php8.5 /usr/bin/php8.4 /usr/bin/php8.3 /usr/bin/php8.2 /usr/bin/php8.1; do
  if command -v "$b" >/dev/null 2>&1; then output=$("$b" -n -r 'echo "PATCHWATCH_CLI=".PHP_VERSION."\\n";' 2>/dev/null); case "$output" in *PATCHWATCH_CLI=*) printf '%s\\n' "$output"; break;; esac; fi
@@ -21,10 +24,11 @@ for b in php-cgi php-cgi85 php-cgi84 php-cgi83 php-cgi82; do
  if command -v "$b" >/dev/null 2>&1; then "$b" -n -v 2>/dev/null | head -1 | sed 's/^/PATCHWATCH_CGI=/'; break; fi
 done
 true`;
-const images={};const targets=[...new Map(data.projects.filter(p=>p.php).flatMap(p=>p.images.map(i=>[i.image,{...i,project:p.id,name:p.name}]))).values()].slice(0,limit);
+const images=selected?.length?{...previous}:{};const targets=[...new Map(data.projects.filter(p=>p.php).flatMap(p=>p.images.map(i=>[i.image,{...i,project:p.id,name:p.name}]))).values()].filter(i=>!selected?.length||selected.includes(i.image)).slice(0,limit);
+if(selected?.length&&targets.length!==new Set(selected).size)throw new Error('A selected image is not mapped in the catalogue.');
 for(const target of targets){const checkedAt=new Date().toISOString();let result={image:target.image,project:target.project,name:target.name,checkedAt,status:'scan-error',platform:'linux/amd64',scope:'Published image runtime binaries on linux/amd64; not the user’s running deployment.'};try{
   const meta=await inspectRegistry(target.image);result={...result,digest:meta.digest,immutable:meta.immutable,publishedAt:meta.publishedAt};
-  if(previous[target.image]?.digest===meta.digest&&previous[target.image]?.probeVersion===2&&['fixed','affected'].includes(previous[target.image].status)&&!args.includes('--force')){images[target.image]={...previous[target.image],tagCheckedAt:checkedAt};console.log(`${target.image}: ${images[target.image].status} (same digest)`);continue;}
+  if(previousAdvisoryKey===advisoryKey&&previous[target.image]?.digest===meta.digest&&previous[target.image]?.probeVersion===2&&['fixed','affected'].includes(previous[target.image].status)&&!args.includes('--force')){images[target.image]={...previous[target.image],tagCheckedAt:checkedAt};console.log(`${target.image}: ${images[target.image].status} (same digest)`);continue;}
   let pullRef=meta.immutable;
   if(target.image.startsWith('lscr.io/')){try{const mirror=await inspectRegistry(target.image.replace('lscr.io/','ghcr.io/'));if(mirror.digest===meta.digest){pullRef=mirror.immutable;result.mirror=pullRef;}}catch{}}
   let pullError;for(let attempt=0;attempt<3;attempt++){try{await run('docker',['pull','--platform=linux/amd64',pullRef],{timeout:180000,maxBuffer:1024*1024});pullError=null;break;}catch(e){pullError=e;if(attempt<2)await new Promise(r=>setTimeout(r,5000*(attempt+1)));}}if(pullError)throw pullError;
@@ -43,8 +47,8 @@ for(const target of targets){const checkedAt=new Date().toISOString();let result
 }catch(e){result.status='scan-error';result.error=String(e.stderr||e.message).slice(0,1200);result.reason='Automatic inspection failed; it will be retried on the next run.';}
 images[target.image]=result;console.log(`${target.image}: ${result.status} ${result.runtimes?.map(r=>r.version).join(',')||result.error||''}`);
 if(process.env.GITHUB_ACTIONS==='true'&&result.immutable)await run('docker',['image','rm',result.executionRef||result.immutable],{timeout:45000,maxBuffer:1024*1024}).catch(()=>{});
-await mkdir(path.join(root,'dist/data'),{recursive:true});await writeFile(path.join(root,'dist/data/verified-images.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),runUrl:process.env.GITHUB_RUN_ID?`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`:null,images},null,2));
+await mkdir(path.join(root,'dist/data'),{recursive:true});await writeFile(path.join(root,'dist/data/verified-images.json'),JSON.stringify({schemaVersion:1,advisoryKey,generatedAt:new Date().toISOString(),runUrl:process.env.GITHUB_RUN_ID?`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`:null,images},null,2));
 }
 const counts={fixed:0,affected:0,'scan-error':0};for(const i of Object.values(images))counts[i.status]++;
-await writeFile(path.join(root,'dist/data/verified-images.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),runUrl:process.env.GITHUB_RUN_ID?`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`:null,images},null,2));
+await writeFile(path.join(root,'dist/data/verified-images.json'),JSON.stringify({schemaVersion:1,advisoryKey,generatedAt:new Date().toISOString(),runUrl:process.env.GITHUB_RUN_ID?`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`:null,images},null,2));
 console.log(JSON.stringify(counts));
