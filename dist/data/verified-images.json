@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-22T22:01:05.291Z",
+  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39861251656",
+  "images": {
+    "nextcloud:latest": {
+      "image": "nextcloud:latest",
+      "project": "nextcloud",
+      "name": "Nextcloud",
+      "checkedAt": "2026-10-22T21:57:04.191Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:b2de54764f1ce7d47d221536f72af93567116420d6c06cfc16bccf55b0403fbe",
+      "immutable": "docker.io/library/nextcloud@sha256:b2de54764f1ce7d47d221536f72af93567116420d6c06cfc16bccf55b0403fbe",
+      "publishedAt": "2026-10-21T18:01:44.173710422Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "fireflyiii/core:latest": {
+      "image": "fireflyiii/core:latest",
+      "project": "firefly-iii",
+      "name": "Firefly III",
+      "checkedAt": "2026-10-22T21:57:41.340Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:558ef1f65015ec6bf570022e2582869e3cba067d9723e8d1edb3863e80d8a95b",
+      "immutable": "docker.io/fireflyiii/core@sha256:558ef1f65015ec6bf570022e2582869e3cba067d9723e8d1edb3863e80d8a95b",
+      "publishedAt": "2026-10-21T18:42:14.671503182Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "matomo:latest": {
+      "image": "matomo:latest",
+      "project": "matomo",
+      "name": "Matomo",
+      "checkedAt": "2026-10-22T21:57:58.579Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:8074620ddba62edda5bd5963757e694d919492032961c7fc5112baf854764e7d",
+      "immutable": "docker.io/library/matomo@sha256:8074620ddba62edda5bd5963757e694d919492032961c7fc5112baf854764e7d",
+      "publishedAt": "2026-10-21T16:36:55.973615316Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.4.27",
+          "status": "patched",
+          "minimum": "8.4.27",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "wordpress:latest": {
+      "image": "wordpress:latest",
+      "project": "wordpress",
+      "name": "WordPress",
+      "checkedAt": "2026-10-22T21:58:12.941Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:806680ba62232c4c300fb9dcc9f89d08e9e8c2bfc59837a1f58716f8648306d5",
+      "immutable": "docker.io/library/wordpress@sha256:806680ba62232c4c300fb9dcc9f89d08e9e8c2bfc59837a1f58716f8648306d5",
+      "publishedAt": "2026-10-21T16:29:48.270758445Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "phanan/koel:latest": {
+      "image": "phanan/koel:latest",
+      "project": "koel",
+      "name": "koel",
+      "checkedAt": "2026-10-22T21:58:27.354Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:6a1fa5d24787d9321b64061f20b19cd467ace96e5ceb67f64f378812c74d6ab8",
+      "immutable": "docker.io/phanan/koel@sha256:6a1fa5d24787d9321b64061f20b19cd467ace96e5ceb67f64f378812c74d6ab8",
+      "publishedAt": "2026-09-28T12:56:43.384964596Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.4.8",
+          "status": "below-fixed",
+          "minimum": "8.4.27",
+          "reason": "Below upstream fix threshold; vendor backports require separate evidence."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+    },
+    "freshrss/freshrss:latest": {
+      "image": "freshrss/freshrss:latest",
+      "project": "freshrss",
+      "name": "FreshRSS",
+      "checkedAt": "2026-10-22T21:58:58.848Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:a003730e81c89abf86c3ca9c8b263c818804734b574469d59586234364f425b0",
+      "immutable": "docker.io/freshrss/freshrss@sha256:a003730e81c89abf86c3ca9c8b263c818804734b574469d59586234364f425b0",
+      "publishedAt": "2026-10-21T20:46:47.448736827Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.4.27",
+          "status": "patched",
+          "minimum": "8.4.27",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "wallabag/wallabag:latest": {
+      "image": "wallabag/wallabag:latest",
+      "project": "wallabag",
+      "name": "Wallabag",
+      "checkedAt": "2026-10-22T21:59:05.147Z",
+      "status": "scan-error",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:82ade66b403d67c05732f9f08003034509f6499e9f487b858c0b77524b28545d",
+      "immutable": "docker.io/wallabag/wallabag@sha256:82ade66b403d67c05732f9f08003034509f6499e9f487b858c0b77524b28545d",
+      "publishedAt": "2025-10-07T08:18:01.960915532Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.1.32",
+          "status": "unknown",
+          "reason": "No verified fix threshold for this branch. Check vendor backports or update the advisory."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.1.32",
+          "status": "unknown",
+          "reason": "No verified fix threshold for this branch. Check vendor backports or update the advisory."
+        }
+      ],
+      "error": "This PHP branch has no verified upstream version threshold; automatic vendor assessment is required.",
+      "reason": "Automatic inspection failed; it will be retried on the next run."
+    },
+    "leantime/leantime:latest": {
+      "image": "leantime/leantime:latest",
+      "project": "leantime",
+      "name": "Leantime",
+      "checkedAt": "2026-10-22T21:59:15.704Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:b7f377d7d8d847d83c60b76d9e23e1dc4be5fbf4d683d88309712998d66dbc5f",
+      "immutable": "docker.io/leantime/leantime@sha256:b7f377d7d8d847d83c60b76d9e23e1dc4be5fbf4d683d88309712998d66dbc5f",
+      "publishedAt": "2026-10-21T19:21:55.139024309Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "kanboard/kanboard:latest": {
+      "image": "kanboard/kanboard:latest",
+      "project": "kanboard",
+      "name": "Kanboard",
+      "checkedAt": "2026-10-22T21:59:38.365Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:2b80e164d215283f1f704fa60301809b8549f3ff0692ac78aa8079101270c363",
+      "immutable": "docker.io/kanboard/kanboard@sha256:2b80e164d215283f1f704fa60301809b8549f3ff0692ac78aa8079101270c363",
+      "publishedAt": "2026-10-21T21:27:04.182291094Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "bellamy/wallos:latest": {
+      "image": "bellamy/wallos:latest",
+      "project": "wallos",
+      "name": "Wallos",
+      "checkedAt": "2026-10-22T21:59:41.960Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:6e4fdc304fd073e13d38a12850d2688c061e7851b3410b30a5fd9adc10748478",
+      "immutable": "docker.io/bellamy/wallos@sha256:6e4fdc304fd073e13d38a12850d2688c061e7851b3410b30a5fd9adc10748478",
+      "publishedAt": "2026-10-21T17:29:02.660015741Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "privatebin/nginx-fpm-alpine:latest": {
+      "image": "privatebin/nginx-fpm-alpine:latest",
+      "project": "privatebin",
+      "name": "PrivateBin",
+      "checkedAt": "2026-10-22T21:59:46.651Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:f37dffd71cf0322e4bb2c083b13d3c839c2f2c6e6c50076fbd5d56f967b3fb97",
+      "immutable": "docker.io/privatebin/nginx-fpm-alpine@sha256:f37dffd71cf0322e4bb2c083b13d3c839c2f2c6e6c50076fbd5d56f967b3fb97",
+      "publishedAt": "2026-10-22T02:32:28.875478979Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "roundcube/roundcubemail:latest": {
+      "image": "roundcube/roundcubemail:latest",
+      "project": "roundcube",
+      "name": "Roundcube",
+      "checkedAt": "2026-10-22T21:59:51.885Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:a1ff25a18c6f4462c163d67441b8f05b6fe8c7c9cb6bda5bb34395d017ee8a73",
+      "immutable": "docker.io/roundcube/roundcubemail@sha256:a1ff25a18c6f4462c163d67441b8f05b6fe8c7c9cb6bda5bb34395d017ee8a73",
+      "publishedAt": "2026-10-22T14:05:55.120205842Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.4.27",
+          "status": "patched",
+          "minimum": "8.4.27",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "joomla:latest": {
+      "image": "joomla:latest",
+      "project": "joomla!",
+      "name": "Joomla!",
+      "checkedAt": "2026-10-22T22:00:06.085Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:ccb1a6a3ceb84c51d3a21a9122b2bcaf239a5d297bd4d3a3e0a0d65c7048ff84",
+      "immutable": "docker.io/library/joomla@sha256:ccb1a6a3ceb84c51d3a21a9122b2bcaf239a5d297bd4d3a3e0a0d65c7048ff84",
+      "publishedAt": "2026-10-21T16:36:38.396697936Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.4.27",
+          "status": "patched",
+          "minimum": "8.4.27",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "kimai/kimai2:apache": {
+      "image": "kimai/kimai2:apache",
+      "project": "kimai",
+      "name": "Kimai",
+      "checkedAt": "2026-10-22T22:00:24.549Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:5493f83b0f6378a0127c325b628faa40fa1654874117e15c5c32000b721ce0aa",
+      "immutable": "docker.io/kimai/kimai2@sha256:5493f83b0f6378a0127c325b628faa40fa1654874117e15c5c32000b721ce0aa",
+      "publishedAt": "2026-10-21T22:03:55.93974397Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "linkstackorg/linkstack:latest": {
+      "image": "linkstackorg/linkstack:latest",
+      "project": "linkstack",
+      "name": "LinkStack",
+      "checkedAt": "2026-10-22T22:00:41.587Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:9326a919895adc1f304510b48887befd3d57c7fc377d71decb69d5d256ba922b",
+      "immutable": "docker.io/linkstackorg/linkstack@sha256:9326a919895adc1f304510b48887befd3d57c7fc377d71decb69d5d256ba922b",
+      "publishedAt": "2026-10-22T07:30:06.113272117Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "rsprta/selfoss:latest": {
+      "image": "rsprta/selfoss:latest",
+      "project": "selfoss",
+      "name": "Selfoss",
+      "checkedAt": "2026-10-22T22:00:56.362Z",
+      "status": "scan-error",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:411cd5d5986fe2d059ba07769995e29596d0296534f8433df14b24c6d1ad24b7",
+      "immutable": "docker.io/rsprta/selfoss@sha256:411cd5d5986fe2d059ba07769995e29596d0296534f8433df14b24c6d1ad24b7",
+      "publishedAt": "2024-03-16T00:05:39.470199021Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.0.30",
+          "status": "unknown",
+          "reason": "No verified fix threshold for this branch. Check vendor backports or update the advisory."
+        }
+      ],
+      "error": "This PHP branch has no verified upstream version threshold; automatic vendor assessment is required.",
+      "reason": "Automatic inspection failed; it will be retried on the next run."
+    },
+    "lscr.io/linuxserver/bookstack:latest": {
+      "image": "lscr.io/linuxserver/bookstack:latest",
+      "project": "bookstack",
+      "name": "BookStack",
+      "checkedAt": "2026-10-22T22:01:03.272Z",
+      "status": "scan-error",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:610ccd25f95859535ed907936484718fc8cc75d2139e7a4fe938e11ab2a2ab6f",
+      "immutable": "lscr.io/linuxserver/bookstack@sha256:610ccd25f95859535ed907936484718fc8cc75d2139e7a4fe938e11ab2a2ab6f",
+      "publishedAt": "2026-10-21T20:26:59.76434546Z",
+      "error": "Error response from daemon: toomanyrequests: retry-after: 1.048028ms, allowed: 44000/minute\n",
+      "reason": "Automatic inspection failed; it will be retried on the next run."
+    }
+  }
+}
