@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T22:49:17.697Z",
+  "generatedAt": "2026-10-22T23:04:56.398Z",
   "advisory": {
     "name": "PHP2Shell",
     "cves": [
@@ -4755,7 +4755,7 @@
             "https://devdocs.bagisto.com/getting-started/before-you-start.html",
             "https://devdocs.bagisto.com/getting-started/installation"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -5236,7 +5236,7 @@
             "https://api.github.com/repos/firefly-iii/firefly-iii/dependency-graph/sbom",
             "https://github.com/firefly-iii/firefly-iii/issues/13087#issuecomment-6324447202"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -6425,7 +6425,7 @@
             "https://wordpress.org/about/requirements/",
             "https://make.wordpress.org/hosting/handbook/server-environment/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -7708,7 +7708,7 @@
             "https://docs.flarum.org/install/",
             "https://docs.flarum.org/1.x/install/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -7872,7 +7872,7 @@
           "sources": [
             "https://freshrss.github.io/FreshRSS/en/admins/02_Prerequisites.html"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -9034,7 +9034,7 @@
             "https://github.com/Qloapps/QloApps",
             "https://api.github.com/repos/Qloapps/QloApps/dependency-graph/sbom"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -10008,7 +10008,7 @@
           "sources": [
             "https://doc.wallabag.org/admin/installation/requirements/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -10283,7 +10283,7 @@
           "sources": [
             "https://github.com/YOURLS/YOURLS"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -10377,7 +10377,7 @@
             "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings",
             "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -10823,7 +10823,7 @@
             "https://github.com/Leantime/leantime/blob/master/composer.json",
             "https://github.com/Leantime/leantime"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -11835,7 +11835,7 @@
             "https://docs.mautic.org/en/7.0/getting_started/how_to_install_mautic.html",
             "https://github.com/mautic/mautic/blob/7.x/composer.json"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -12251,7 +12251,7 @@
           "sources": [
             "https://woocommerce.com/document/server-requirements/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -12831,7 +12831,7 @@
           "sources": [
             "https://docs.kanboard.org/v1/admin/requirements/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -13539,7 +13539,7 @@
           "sources": [
             "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -14417,7 +14417,7 @@
             "https://github.com/PrivateBin/PrivateBin/blob/master/composer.json",
             "https://github.com/PrivateBin/PrivateBin"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -14632,7 +14632,7 @@
           "sources": [
             "https://docs.sylius.com/public/getting-started/before-you-begin"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -15372,7 +15372,7 @@
             "https://packagist.org/packages/opencart/opencart",
             "https://github.com/opencart/opencart/blob/master/docs/getting-started/system-requirements.md"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -15740,7 +15740,7 @@
           "sources": [
             "https://www.adminer.org/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -17498,7 +17498,7 @@
           "sources": [
             "https://docs.humhub.org/docs/admin/requirements/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -19262,7 +19262,7 @@
             "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/",
             "https://docs.suitecrm.com/admin/compatibility-matrix/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -19675,7 +19675,7 @@
             "https://github.com/openemr/openemr/pull/14773",
             "https://github.com/openemr/openemr/blob/b171ac28a57e5da96b1b8eaceb7324edac045948/docker/binary/README.md"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -20120,7 +20120,7 @@
             "https://packagist.org/packages/shlinkio/shlink",
             "https://github.com/shlinkio/shlink"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -21288,7 +21288,7 @@
             "https://github.com/kimai/kimai/releases/tag/2.70.1",
             "https://github.com/kimai/kimai/pull/6262#issuecomment-6322087754"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -21794,7 +21794,7 @@
           "sources": [
             "https://github.com/dokuwiki/dokuwiki/blob/master/composer.json"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -22012,7 +22012,7 @@
             "https://github.com/freescout-help-desk/freescout/wiki/Installation-Guide",
             "https://github.com/freescout-help-desk/freescout"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -24211,7 +24211,7 @@
             "image": "linkstackorg/linkstack:latest",
             "project": "linkstack",
             "name": "LinkStack",
-            "checkedAt": "2026-10-22T22:44:50.702Z",
+            "checkedAt": "2026-10-22T23:02:00.115Z",
             "status": "fixed",
             "platform": "linux/amd64",
             "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
@@ -24220,12 +24220,18 @@
             "publishedAt": "2026-10-22T07:30:06.113272117Z",
             "executionRef": "docker.io/linkstackorg/linkstack@sha256:9326a919895adc1f304510b48887befd3d57c7fc377d71decb69d5d256ba922b",
             "webEvidence": {
-              "web": null,
+              "web": {
+                "version": "8.3.36",
+                "sapi": "apache2handler",
+                "binary": "",
+                "session_upload_progress": "1",
+                "memory_limit": "128M"
+              },
               "os": "NAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.25.0_alpha20260805\nPRETTY_NAME=\"Alpine Linux edge\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"",
               "packages": "php83-8.3.36-r0\nphp83-apache2-8.3.36-r0\nphp83-bcmath-8.3.36-r0\nphp83-bz2-8.3.36-r0\nphp83-calendar-8.3.36-r0\nphp83-common-8.3.36-r0\nphp83-ctype-8.3.36-r0\nphp83-curl-8.3.36-r0\nphp83-dom-8.3.36-r0\nphp83-fileinfo-8.3.36-r0\nphp83-gd-8.3.36-r0\nphp83-iconv-8.3.36-r0\nphp83-mbstring-8.3.36-r0\nphp83-mysqli-8.3.36-r0\nphp83-mysqlnd-8.3.36-r0\nphp83-openssl-8.3.36-r0\nphp83-pdo-8.3.36-r0\nphp83-pdo_mysql-8.3.36-r0\nphp83-pdo_pgsql-8.3.36-r0\nphp83-pdo_sqlite-8.3.36-r0\nphp83-pecl-igbinary-3.2.17_rc1-r0\nphp83-pecl-msgpack-3.0.1-r0\nphp83-pecl-redis-6.3.0-r0\nphp83-phar-8.3.36-r0\nphp83-session-8.3.36-r0\nphp83-sockets-8.3.36-r0\nphp83-tokenizer-8.3.36-r0\nphp83-xml-8.3.36-r0\nphp83-xmlwriter-8.3.36-r0\nphp83-zip-8.3.36-r0",
               "workerConfig": null,
-              "method": "CLI binary; web module not present",
-              "checkedAt": "2026-10-22T22:45:02.889Z"
+              "method": "Harmless PHP request through apache2handler",
+              "checkedAt": "2026-10-22T23:02:22.391Z"
             },
             "probeVersion": 2,
             "runtimes": [
@@ -24235,6 +24241,14 @@
                 "status": "patched",
                 "minimum": "8.3.36",
                 "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+              },
+              {
+                "sapi": "apache2handler",
+                "version": "8.3.36",
+                "status": "patched",
+                "minimum": "8.3.36",
+                "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI.",
+                "requestVerified": true
               }
             ],
             "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
@@ -24333,7 +24347,7 @@
             "https://github.com/shaarli/Shaarli/blob/master/composer.json",
             "https://github.com/shaarli/Shaarli/issues/2297#issuecomment-6320488435"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -25411,7 +25425,7 @@
           "sources": [
             "https://craftcms.com/docs/5.x/requirements.html"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -25551,7 +25565,7 @@
           "sources": [
             "https://docs.espocrm.com/administration/server-configuration/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -26501,7 +26515,7 @@
             "https://github.com/InvoicePlane/InvoicePlane/blob/develop/.github/docs/INSTALLATION.md",
             "https://github.com/InvoicePlane/InvoicePlane/blob/develop/composer.json"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -26897,7 +26911,7 @@
           "sources": [
             "https://docs.filegator.io/install.html"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -29174,7 +29188,7 @@
             "image": "rsprta/selfoss:latest",
             "project": "selfoss",
             "name": "Selfoss",
-            "checkedAt": "2026-10-22T22:45:07.160Z",
+            "checkedAt": "2026-10-22T22:54:52.999Z",
             "status": "affected",
             "platform": "linux/amd64",
             "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
@@ -29183,12 +29197,18 @@
             "publishedAt": "2024-03-16T00:05:39.470199021Z",
             "executionRef": "docker.io/rsprta/selfoss@sha256:411cd5d5986fe2d059ba07769995e29596d0296534f8433df14b24c6d1ad24b7",
             "webEvidence": {
-              "web": null,
+              "web": {
+                "version": "8.0.30",
+                "sapi": "fpm-fcgi",
+                "binary": "/usr/sbin/php-fpm8",
+                "session_upload_progress": "1",
+                "memory_limit": "128M"
+              },
               "os": "NAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.16.9\nPRETTY_NAME=\"Alpine Linux v3.16\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"",
               "packages": "php8-common-8.0.30-r0\nphp8-8.0.30-r0\nphp8-ctype-8.0.30-r0\nphp8-curl-8.0.30-r0\nphp8-dom-8.0.30-r0\nphp8-fpm-8.0.30-r0\nphp8-gd-8.0.30-r0\nphp8-iconv-8.0.30-r0\nphp8-mbstring-8.0.30-r0\nphp8-pdo-8.0.30-r0\nphp8-openssl-8.0.30-r0\nphp8-mysqlnd-8.0.30-r0\nphp8-pdo_mysql-8.0.30-r0\nphp8-pdo_pgsql-8.0.30-r0\nphp8-pdo_sqlite-8.0.30-r0\nphp8-pecl-imagick-3.7.0-r0\nphp8-session-8.0.30-r0\nphp8-simplexml-8.0.30-r0\nphp8-tidy-8.0.30-r0\nphp8-xml-8.0.30-r0\nphp8-xmlwriter-8.0.30-r0",
               "workerConfig": null,
-              "method": "CLI binary; web module not present",
-              "checkedAt": "2026-10-22T22:45:12.718Z"
+              "method": "Harmless PHP request through fpm-fcgi",
+              "checkedAt": "2026-10-22T22:54:59.134Z"
             },
             "probeVersion": 2,
             "runtimes": [
@@ -29197,6 +29217,13 @@
                 "version": "8.0.30",
                 "status": "below-fixed",
                 "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed."
+              },
+              {
+                "sapi": "fpm-fcgi",
+                "version": "8.0.30",
+                "status": "below-fixed",
+                "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed.",
+                "requestVerified": true
               }
             ],
             "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
@@ -31114,7 +31141,7 @@
           "sources": [
             "https://packagist.org/packages/phpbb/phpbb"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -31539,7 +31566,7 @@
             "https://github.com/projectsend/projectsend/blob/main/INSTALL.md",
             "https://docs.projectsend.org/about/installation/requirements"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -32990,7 +33017,7 @@
             "https://github.com/nilsteampassnet/TeamPass",
             "https://github.com/nilsteampassnet/TeamPass/blob/master/composer.json"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -33262,7 +33289,7 @@
           "sources": [
             "https://github.com/mantisbt/mantisbt"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -34252,7 +34279,7 @@
             "https://docs.fossbilling.org/getting-started/requirements/",
             "https://github.com/boxbilling/boxbilling"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -34355,7 +34382,7 @@
           "sources": [
             "https://github.com/the-djmaze/snappymail"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -36077,7 +36104,7 @@
             "https://wintercms.com/en/",
             "https://wintercms.com/blog/post/we-have-forked-october-cms"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -38148,7 +38175,7 @@
           "sources": [
             "https://docs.mybb.com/1.8/install/requirements/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -40204,7 +40231,7 @@
             "https://docs.backdropcms.org/documentation/system-requirements",
             "https://backdropcms.org/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -42536,7 +42563,7 @@
             "https://doc.thelia.net/docs/3.0/getting-started/installation",
             "https://doc.thelia.net/docs/3.0/upgrading/migrate"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -42669,7 +42696,7 @@
           "sources": [
             "https://resources.phplist.com/system/start"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -44337,7 +44364,7 @@
           "sources": [
             "https://github.com/SimpleMachines/SMF/blob/release-3.0/composer.json"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -46179,7 +46206,7 @@
           "sources": [
             "https://docs.boltcms.io/5.2/getting-started/requirements"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -47329,7 +47356,7 @@
           "sources": [
             "https://omeka.org/s/docs/user-manual/install/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -47787,7 +47814,7 @@
             "https://github.com/ILIAS-eLearning/ILIAS/blob/release_11/docs/configuration/install.md",
             "https://github.com/ILIAS-eLearning/ILIAS/releases"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -50153,7 +50180,7 @@
           "sources": [
             "https://docs.collectiveaccess.org/providence/user/setup/systemReq"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -53069,7 +53096,7 @@
             "https://packagist.org/packages/egroupware/egroupware",
             "https://github.com/EGroupware/egroupware/blob/master/composer.json"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -54218,7 +54245,7 @@
             "https://buddypress.trac.wordpress.org/changeset/14231",
             "https://wordpress.org/plugins/buddypress/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -54657,7 +54684,7 @@
           "sources": [
             "https://docs.oxid-esales.com/eshop/de/7.3/installation/neu-installation/server-und-systemvoraussetzungen.html"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -56557,7 +56584,7 @@
           "sources": [
             "https://docs.openeclass.org/en/4.1/install"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -62914,7 +62941,7 @@
             "https://www.bookstackapp.com/docs/admin/installation/",
             "https://www.bookstackapp.com/blog/php-security-release-critical/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -64410,7 +64437,7 @@
             "https://www.drupal.org/project/drupal/releases/10.6.19",
             "https://packagist.org/packages/drupal/core"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -64466,7 +64493,7 @@
           "sources": [
             "https://www.drupal.org/project/commerce"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -64784,7 +64811,7 @@
           "sources": [
             "https://docs.filerun.com/requirements"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -65913,7 +65940,7 @@
           "sources": [
             "https://www.mediawiki.org/wiki/Manual:Installation_requirements"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -66031,7 +66058,7 @@
             "https://download.moodle.org/releases/latest/",
             "https://packaging.moodle.org/stable503/moodle-5.3.tgz.sha256"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -66653,7 +66680,7 @@
           "sources": [
             "https://www.pmwiki.org/wiki/PmWiki/Requirements"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -67149,7 +67176,7 @@
           "sources": [
             "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements?from_rs=true"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -67507,7 +67534,7 @@
             "https://www.seeddms.org/about/",
             "https://www.seeddms.org/download/"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -67953,7 +67980,7 @@
           "sources": [
             "https://www.spip.net/en_article6659.html"
           ],
-          "checkedAt": "2026-10-22T22:49:17.697Z",
+          "checkedAt": "2026-10-22T23:04:56.398Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"

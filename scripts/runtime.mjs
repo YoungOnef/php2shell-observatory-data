@@ -1,4 +1,6 @@
 import {assessVersion} from './core.mjs';
+import {createHash} from 'node:crypto';
+export function evidenceKey(advisory,sources=[]){const hash=createHash('sha256').update(JSON.stringify(advisory));for(const source of sources)hash.update('\0').update(source);return hash.digest('hex');}
 export function reusableEvidence(previous,digest,previousKey,currentKey,{force=false,selected=false}={}){
   return !force&&!selected&&previousKey===currentKey&&previous?.digest===digest&&previous?.probeVersion===2&&['fixed','affected'].includes(previous?.status);
 }
