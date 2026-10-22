@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T22:29:48.257021+00:00",
+  "generatedAt": "2026-10-22T22:55:08.595565+00:00",
   "seed": "628b02bc2eb7f54db257f42d",
   "sampling": "Three random distinct image digests from each label, plus the legacy distro-backport edge case if not already drawn.",
   "scope": "Pinned linux/amd64 images; harmless PHP page through isolated Apache/FPM, plus CLI binary for RoadRunner images. No exploit attempt.",
@@ -123,19 +123,25 @@
         "PHP_SHA256=3eec91294d8c09b3df80b39ec36d574ed9b05de4c8afcb25fa215d48f9ecbc6b"
       ],
       "probe": {
-        "code": 2,
-        "stdout": "\nAUDIT_CLI\n\nWarning: PHP Startup: Unable to load dynamic library 'gd.so' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so (libpng16.so.16: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so.so (/usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0\n\nWarning: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so (libzip.so.4: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so.so (/usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0\n{\"version\":\"8.2.27\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nPRETTY_NAME=\"Debian GNU/Linux 12 (bookworm)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"12\"\nVERSION=\"12 (bookworm)\"\nVERSION_CODENAME=bookworm\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"\n\nAUDIT_PACKAGES\nphp-crypt-gpg \n\nAUDIT_WEB\n\nWarning: PHP Startup: Unable to load dynamic library 'gd.so' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so (libpng16.so.16: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so.so (/usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0\n\nWarning: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so (libzip.so.4: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so.so (/usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0\n[Thu Oct 22 22:30:55.929729 2026] [mpm_prefork:notice] [pid 15:tid 15] AH00163: Apache/2.4.62 (Debian) PHP/8.2.27 configured -- resuming normal operations\n[Thu Oct 22 22:30:55.929757 2026] [core:notice] [pid 15:tid 15] AH00094: Command line: 'apache2 -f /tmp/audit-apache.conf -D FOREGROUND'\n",
+        "code": 0,
+        "stdout": "\nAUDIT_CLI\n{\"version\":\"8.2.27\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nPRETTY_NAME=\"Debian GNU/Linux 12 (bookworm)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"12\"\nVERSION=\"12 (bookworm)\"\nVERSION_CODENAME=bookworm\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"\n\nAUDIT_PACKAGES\nphp-crypt-gpg \n\nAUDIT_WEB\n{\"version\":\"8.2.27\",\"sapi\":\"apache2handler\",\"binary\":\"\",\"session_upload_progress\":\"1\",\"memory_limit\":\"512M\"}\nAUDIT_DONE\n",
         "stderr": ""
       },
       "cli": {
-        "output": "Warning: PHP Startup: Unable to load dynamic library 'gd.so' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so (libpng16.so.16: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so.so (/usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0\n\nWarning: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so (libzip.so.4: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so.so (/usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0\n{\"version\":\"8.2.27\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}"
+        "version": "8.2.27",
+        "sapi": "cli",
+        "binary": "/usr/local/bin/php"
       },
       "web": {
-        "output": "Warning: PHP Startup: Unable to load dynamic library 'gd.so' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so (libpng16.so.16: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so.so (/usr/local/lib/php/extensions/no-debug-non-zts-20220829/gd.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0\n\nWarning: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so (libzip.so.4: cannot open shared object file: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so.so (/usr/local/lib/php/extensions/no-debug-non-zts-20220829/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0\n[Thu Oct 22 22:30:55.929729 2026] [mpm_prefork:notice] [pid 15:tid 15] AH00163: Apache/2.4.62 (Debian) PHP/8.2.27 configured -- resuming normal operations\n[Thu Oct 22 22:30:55.929757 2026] [core:notice] [pid 15:tid 15] AH00094: Command line: 'apache2 -f /tmp/audit-apache.conf -D FOREGROUND'"
+        "version": "8.2.27",
+        "sapi": "apache2handler",
+        "binary": "",
+        "session_upload_progress": "1",
+        "memory_limit": "512M"
       },
       "os": "PRETTY_NAME=\"Debian GNU/Linux 12 (bookworm)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"12\"\nVERSION=\"12 (bookworm)\"\nVERSION_CODENAME=bookworm\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"",
       "packages": "php-crypt-gpg",
-      "independentVerdict": "probe-error",
+      "independentVerdict": "below-upstream-fix",
       "note": "Version comparison to PHP official advisory. Distro backports require package evidence. No exploitability or deployment attestation."
     },
     {
@@ -153,8 +159,8 @@
         "PHP_SHA256=561bb866bdd509094be00f4ece7c3543ec971c4d878645ee81437e291cffc762"
       ],
       "probe": {
-        "code": 2,
-        "stdout": "\nAUDIT_CLI\n{\"version\":\"7.4.1\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nPRETTY_NAME=\"Debian GNU/Linux 10 (buster)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"10\"\nVERSION=\"10 (buster)\"\nVERSION_CODENAME=buster\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"\n\nAUDIT_PACKAGES\nphpgacl \n\nAUDIT_WEB\n[Thu Oct 22 22:31:08.358474 2026] [mpm_prefork:notice] [pid 15] AH00163: Apache/2.4.38 (Debian) PHP/7.4.1 configured -- resuming normal operations\n[Thu Oct 22 22:31:08.358528 2026] [core:notice] [pid 15] AH00094: Command line: 'apache2 -f /tmp/audit-apache.conf -D FOREGROUND'\n",
+        "code": 0,
+        "stdout": "\nAUDIT_CLI\n{\"version\":\"7.4.1\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nPRETTY_NAME=\"Debian GNU/Linux 10 (buster)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"10\"\nVERSION=\"10 (buster)\"\nVERSION_CODENAME=buster\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"\n\nAUDIT_PACKAGES\nphpgacl \n\nAUDIT_WEB\n{\"version\":\"7.4.1\",\"sapi\":\"apache2handler\",\"binary\":\"\",\"session_upload_progress\":\"1\",\"memory_limit\":\"512M\"}\nAUDIT_DONE\n",
         "stderr": ""
       },
       "cli": {
@@ -163,7 +169,11 @@
         "binary": "/usr/local/bin/php"
       },
       "web": {
-        "output": "[Thu Oct 22 22:31:08.358474 2026] [mpm_prefork:notice] [pid 15] AH00163: Apache/2.4.38 (Debian) PHP/7.4.1 configured -- resuming normal operations\n[Thu Oct 22 22:31:08.358528 2026] [core:notice] [pid 15] AH00094: Command line: 'apache2 -f /tmp/audit-apache.conf -D FOREGROUND'"
+        "version": "7.4.1",
+        "sapi": "apache2handler",
+        "binary": "",
+        "session_upload_progress": "1",
+        "memory_limit": "512M"
       },
       "os": "PRETTY_NAME=\"Debian GNU/Linux 10 (buster)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"10\"\nVERSION=\"10 (buster)\"\nVERSION_CODENAME=buster\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"",
       "packages": "phpgacl",
@@ -186,7 +196,7 @@
       ],
       "probe": {
         "code": 0,
-        "stdout": "\nAUDIT_CLI\n{\"version\":\"8.3.35\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nNAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.24.2\nPRETTY_NAME=\"Alpine Linux v3.24\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"\n\nAUDIT_PACKAGES\n\nAUDIT_WEB\nNo separate Apache module or FPM binary. The image uses the CLI binary.\n\nAUDIT_APP_RUNTIME\n\nAUDIT_DONE\n",
+        "stdout": "\nAUDIT_CLI\n{\"version\":\"8.3.35\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nNAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.24.2\nPRETTY_NAME=\"Alpine Linux v3.24\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"\n\nAUDIT_PACKAGES\n\nAUDIT_WEB\n{\"version\":\"8.3.35\",\"sapi\":\"cgi-fcgi\",\"binary\":\"\\/usr\\/local\\/bin\\/php-cgi\",\"session_upload_progress\":\"1\",\"memory_limit\":\"128M\"}\nAUDIT_DONE\n",
         "stderr": "WARNING: fetching https://dl-cdn.alpinelinux.org/alpine/v3.24/main/x86_64/APKINDEX.tar.gz: DNS: transient error (try again later)\nWARNING: fetching https://dl-cdn.alpinelinux.org/alpine/v3.24/community/x86_64/APKINDEX.tar.gz: DNS: transient error (try again later)\n"
       },
       "cli": {
@@ -195,7 +205,11 @@
         "binary": "/usr/local/bin/php"
       },
       "web": {
-        "output": "No separate Apache module or FPM binary. The image uses the CLI binary."
+        "version": "8.3.35",
+        "sapi": "cgi-fcgi",
+        "binary": "/usr/local/bin/php-cgi",
+        "session_upload_progress": "1",
+        "memory_limit": "128M"
       },
       "os": "NAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.24.2\nPRETTY_NAME=\"Alpine Linux v3.24\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"",
       "packages": "",
@@ -252,7 +266,7 @@
       ],
       "probe": {
         "code": 0,
-        "stdout": "\nAUDIT_CLI\n{\"version\":\"8.5.12\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nNAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.24.3\nPRETTY_NAME=\"Alpine Linux v3.24\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"\n\nAUDIT_PACKAGES\n\nAUDIT_WEB\nNo separate Apache module or FPM binary. The image uses the CLI binary.\n\nAUDIT_APP_RUNTIME\n/etc/shlink/docker-entrypoint.sh:26:php vendor/bin/shlink-installer init ${flags}\n/etc/shlink/docker-entrypoint.sh:28:if [ \"$SHLINK_RUNTIME\" = 'rr' ]; then\n/etc/shlink/docker-entrypoint.sh:30:  exec ./bin/rr serve -c config/roadrunner/.rr.yml\n/etc/shlink/config/roadrunner/.rr.yml:7:  command: 'php -dopcache.enable_cli=1 -dopcache.validate_timestamps=0 ../../bin/roadrunner-worker.php'\n\nAUDIT_DONE\n",
+        "stdout": "\nAUDIT_CLI\n{\"version\":\"8.5.12\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nNAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.24.3\nPRETTY_NAME=\"Alpine Linux v3.24\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"\n\nAUDIT_PACKAGES\n\nAUDIT_WEB\n{\"version\":\"8.5.12\",\"sapi\":\"cgi-fcgi\",\"binary\":\"\\/usr\\/local\\/bin\\/php-cgi\",\"session_upload_progress\":\"1\",\"memory_limit\":\"128M\"}\nAUDIT_DONE\n",
         "stderr": ""
       },
       "cli": {
@@ -261,7 +275,11 @@
         "binary": "/usr/local/bin/php"
       },
       "web": {
-        "output": "No separate Apache module or FPM binary. The image uses the CLI binary."
+        "version": "8.5.12",
+        "sapi": "cgi-fcgi",
+        "binary": "/usr/local/bin/php-cgi",
+        "session_upload_progress": "1",
+        "memory_limit": "128M"
       },
       "os": "NAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.24.3\nPRETTY_NAME=\"Alpine Linux v3.24\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"",
       "packages": "",
@@ -286,7 +304,7 @@
       ],
       "probe": {
         "code": 0,
-        "stdout": "\nAUDIT_CLI\n{\"version\":\"8.5.7\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nNAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.22.4\nPRETTY_NAME=\"Alpine Linux v3.22\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"\n\nAUDIT_PACKAGES\n\nAUDIT_WEB\nNo separate Apache module or FPM binary. The image uses the CLI binary.\n\nAUDIT_APP_RUNTIME\n/etc/shlink/docker-entrypoint.sh:26:php vendor/bin/shlink-installer init ${flags}\n/etc/shlink/docker-entrypoint.sh:28:if [ \"$SHLINK_RUNTIME\" = 'rr' ]; then\n/etc/shlink/docker-entrypoint.sh:30:  exec ./bin/rr serve -c config/roadrunner/.rr.yml\n/etc/shlink/config/roadrunner/.rr.yml:7:  command: 'php -dopcache.enable_cli=1 -dopcache.validate_timestamps=0 ../../bin/roadrunner-worker.php'\n\nAUDIT_DONE\n",
+        "stdout": "\nAUDIT_CLI\n{\"version\":\"8.5.7\",\"sapi\":\"cli\",\"binary\":\"\\/usr\\/local\\/bin\\/php\"}\nAUDIT_OS\nNAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.22.4\nPRETTY_NAME=\"Alpine Linux v3.22\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"\n\nAUDIT_PACKAGES\n\nAUDIT_WEB\n{\"version\":\"8.5.7\",\"sapi\":\"cgi-fcgi\",\"binary\":\"\\/usr\\/local\\/bin\\/php-cgi\",\"session_upload_progress\":\"1\",\"memory_limit\":\"128M\"}\nAUDIT_DONE\n",
         "stderr": ""
       },
       "cli": {
@@ -295,7 +313,11 @@
         "binary": "/usr/local/bin/php"
       },
       "web": {
-        "output": "No separate Apache module or FPM binary. The image uses the CLI binary."
+        "version": "8.5.7",
+        "sapi": "cgi-fcgi",
+        "binary": "/usr/local/bin/php-cgi",
+        "session_upload_progress": "1",
+        "memory_limit": "128M"
       },
       "os": "NAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.22.4\nPRETTY_NAME=\"Alpine Linux v3.22\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"",
       "packages": "",
