@@ -4,14 +4,14 @@ import {promisify} from 'node:util';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {inspectRegistry} from './registry.mjs';
-import {assessVersion} from './core.mjs';
+import {assessRuntime} from './runtime.mjs';
 const run=promisify(execFile);const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const data=JSON.parse(await readFile(path.join(root,'dist/data/projects.json'),'utf8'));const advisory=JSON.parse(await readFile(path.join(root,'config/advisory.json'),'utf8'));
 let previous={};try{previous=JSON.parse(await readFile(path.join(root,'dist/data/verified-images.json'),'utf8')).images||{}}catch{}
 const args=process.argv.slice(2),limit=Number(args.includes('--limit')?args[args.indexOf('--limit')+1]:'60');
 const probe=`set -u
-for b in php php85 php84 php83 php82 php81 php80 php74; do
- if command -v "$b" >/dev/null 2>&1; then "$b" -n -r 'echo "PATCHWATCH_CLI=".PHP_VERSION."\\n";'; break; fi
+for b in /usr/bin/real_php php php85 php84 php83 php82 php81 php80 php74 /usr/bin/php8.5 /usr/bin/php8.4 /usr/bin/php8.3 /usr/bin/php8.2 /usr/bin/php8.1; do
+ if command -v "$b" >/dev/null 2>&1; then output=$("$b" -n -r 'echo "PATCHWATCH_CLI=".PHP_VERSION."\\n";' 2>/dev/null); case "$output" in *PATCHWATCH_CLI=*) printf '%s\\n' "$output"; break;; esac; fi
 done
 for b in php-fpm php-fpm85 php-fpm84 php-fpm83 php-fpm82 php-fpm8.5 php-fpm8.4 php-fpm8.3 php-fpm8.2; do
  if command -v "$b" >/dev/null 2>&1; then "$b" -n -i 2>/dev/null | grep -m1 '^PHP Version' | sed 's/^/PATCHWATCH_FPM=/'; break; fi
@@ -30,9 +30,8 @@ for(const target of targets){const checkedAt=new Date().toISOString();let result
   result.executionRef=pullRef;
   const flags=['run','--rm','--pull=never','--platform=linux/amd64','--network=none','--read-only','--cap-drop=ALL','--security-opt=no-new-privileges','--memory=192m','--pids-limit=64'];let output;
   try{output=(await run('docker',[...flags,'--user=65534:65534','--entrypoint=/bin/sh',pullRef,'-c',probe],{timeout:45000,maxBuffer:1024*1024})).stdout;}catch{output=(await run('docker',[...flags,'--entrypoint=/bin/sh',pullRef,'-c',probe],{timeout:45000,maxBuffer:1024*1024})).stdout;}
-  const runtimes=[];for(const match of output.matchAll(/^PATCHWATCH_(CLI|FPM|CGI)=(.*)$/gm)){const version=match[2].match(/\b(\d+\.\d+\.\d+)\b/)?.[1];if(version)runtimes.push({sapi:match[1],version,...assessVersion(version,advisory)});}
-  if(!runtimes.length){const raw=(await run('docker',[...flags,'--entrypoint=php',pullRef,'-n','-r','echo PHP_VERSION;'],{timeout:45000,maxBuffer:1024*1024})).stdout.trim();if(/^\d+\.\d+\.\d+$/.test(raw))runtimes.push({sapi:'CLI',version:raw,...assessVersion(raw,advisory)});}
-  for(const runtime of runtimes){const [major,minor]=runtime.version.split('.').map(Number);if(major<8||(major===8&&minor<2)){runtime.status='below-fixed';runtime.reason='Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed.';}}
+  const runtimes=[];for(const match of output.matchAll(/^PATCHWATCH_(CLI|FPM|CGI)=(.*)$/gm)){const version=match[2].match(/\b(\d+\.\d+\.\d+(?:[A-Za-z][\w.-]*)?)/)?.[1];if(version)runtimes.push({sapi:match[1],version,...assessRuntime(version,advisory)});}
+  if(!runtimes.length){const raw=(await run('docker',[...flags,'--entrypoint=php',pullRef,'-n','-r','echo PHP_VERSION;'],{timeout:45000,maxBuffer:1024*1024})).stdout.trim();if(/^\d+\.\d+\.\d+(?:[A-Za-z][\w.-]*)?$/.test(raw))runtimes.push({sapi:'CLI',version:raw,...assessRuntime(raw,advisory)});}
   result.runtimes=runtimes;
   if(!runtimes.length)throw new Error('No queryable PHP runtime found in the image. Automatic retry required.');
   if(runtimes.every(r=>r.status==='patched')){result.status='fixed';result.reason='All queried PHP runtime binaries meet the upstream fix versions for both CVEs.';}
