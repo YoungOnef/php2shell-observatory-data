@@ -1,4 +1,7 @@
 import {assessVersion} from './core.mjs';
+export function reusableEvidence(previous,digest,previousKey,currentKey,{force=false,selected=false}={}){
+  return !force&&!selected&&previousKey===currentKey&&previous?.digest===digest&&previous?.probeVersion===2&&['fixed','affected'].includes(previous?.status);
+}
 export function assessRuntime(version,advisory){
   const match=String(version).match(/^(\d+)\.(\d+)\.(\d+)(.*)$/);
   if(!match)return assessVersion(version,advisory);

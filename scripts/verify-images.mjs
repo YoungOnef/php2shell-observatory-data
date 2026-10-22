@@ -4,7 +4,7 @@ import {promisify} from 'node:util';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {inspectRegistry} from './registry.mjs';
-import {assessRuntime} from './runtime.mjs';
+import {assessRuntime,reusableEvidence} from './runtime.mjs';
 import {inspectWebRuntime} from './web-probe.mjs';
 import {createHash} from 'node:crypto';
 const run=promisify(execFile);const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -28,7 +28,7 @@ const images=selected?.length?{...previous}:{};const targets=[...new Map(data.pr
 if(selected?.length&&targets.length!==new Set(selected).size)throw new Error('A selected image is not mapped in the catalogue.');
 for(const target of targets){const checkedAt=new Date().toISOString();let result={image:target.image,project:target.project,name:target.name,checkedAt,status:'scan-error',platform:'linux/amd64',scope:'Published image runtime binaries on linux/amd64; not the user’s running deployment.'};try{
   const meta=await inspectRegistry(target.image);result={...result,digest:meta.digest,immutable:meta.immutable,publishedAt:meta.publishedAt};
-  if(previousAdvisoryKey===advisoryKey&&previous[target.image]?.digest===meta.digest&&previous[target.image]?.probeVersion===2&&['fixed','affected'].includes(previous[target.image].status)&&!args.includes('--force')){images[target.image]={...previous[target.image],tagCheckedAt:checkedAt};console.log(`${target.image}: ${images[target.image].status} (same digest)`);continue;}
+  if(reusableEvidence(previous[target.image],meta.digest,previousAdvisoryKey,advisoryKey,{force:args.includes('--force'),selected:!!selected?.length})){images[target.image]={...previous[target.image],tagCheckedAt:checkedAt};console.log(`${target.image}: ${images[target.image].status} (same digest)`);continue;}
   let pullRef=meta.immutable;
   if(target.image.startsWith('lscr.io/')){try{const mirror=await inspectRegistry(target.image.replace('lscr.io/','ghcr.io/'));if(mirror.digest===meta.digest){pullRef=mirror.immutable;result.mirror=pullRef;}}catch{}}
   let pullError;for(let attempt=0;attempt<3;attempt++){try{await run('docker',['pull','--platform=linux/amd64',pullRef],{timeout:180000,maxBuffer:1024*1024});pullError=null;break;}catch(e){pullError=e;if(attempt<2)await new Promise(r=>setTimeout(r,5000*(attempt+1)));}}if(pullError)throw pullError;
