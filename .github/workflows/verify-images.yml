@@ -1,0 +1,33 @@
+name: Verify published PHP images
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 */6 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: php2shell-image-verification
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Query actual published PHP runtimes in isolated containers
+        run: node scripts/verify-images.mjs --limit 60
+      - name: Publish automatic results
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if test -f dist/data/verified-images.json; then
+            git add dist/data/verified-images.json
+            if ! git diff --cached --quiet; then
+              git commit -m 'Publish automated PHP runtime verification'
+              git push
+            fi
+          fi
