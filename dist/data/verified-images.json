@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T22:47:48.580Z",
-  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022",
+  "advisoryKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+  "generatedAt": "2026-10-22T22:54:59.607Z",
+  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39868260030",
   "images": {
     "nextcloud:latest": {
       "image": "nextcloud:latest",
@@ -1174,7 +1175,7 @@
       "image": "linkstackorg/linkstack:latest",
       "project": "linkstack",
       "name": "LinkStack",
-      "checkedAt": "2026-10-22T22:44:50.702Z",
+      "checkedAt": "2026-10-22T22:54:38.693Z",
       "status": "fixed",
       "platform": "linux/amd64",
       "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
@@ -1187,8 +1188,8 @@
         "os": "NAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.25.0_alpha20260805\nPRETTY_NAME=\"Alpine Linux edge\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"",
         "packages": "php83-8.3.36-r0\nphp83-apache2-8.3.36-r0\nphp83-bcmath-8.3.36-r0\nphp83-bz2-8.3.36-r0\nphp83-calendar-8.3.36-r0\nphp83-common-8.3.36-r0\nphp83-ctype-8.3.36-r0\nphp83-curl-8.3.36-r0\nphp83-dom-8.3.36-r0\nphp83-fileinfo-8.3.36-r0\nphp83-gd-8.3.36-r0\nphp83-iconv-8.3.36-r0\nphp83-mbstring-8.3.36-r0\nphp83-mysqli-8.3.36-r0\nphp83-mysqlnd-8.3.36-r0\nphp83-openssl-8.3.36-r0\nphp83-pdo-8.3.36-r0\nphp83-pdo_mysql-8.3.36-r0\nphp83-pdo_pgsql-8.3.36-r0\nphp83-pdo_sqlite-8.3.36-r0\nphp83-pecl-igbinary-3.2.17_rc1-r0\nphp83-pecl-msgpack-3.0.1-r0\nphp83-pecl-redis-6.3.0-r0\nphp83-phar-8.3.36-r0\nphp83-session-8.3.36-r0\nphp83-sockets-8.3.36-r0\nphp83-tokenizer-8.3.36-r0\nphp83-xml-8.3.36-r0\nphp83-xmlwriter-8.3.36-r0\nphp83-zip-8.3.36-r0",
         "workerConfig": null,
-        "method": "CLI binary; web module not present",
-        "checkedAt": "2026-10-22T22:45:02.889Z"
+        "method": "CLI binary; separate web SAPI not detected by this probe",
+        "checkedAt": "2026-10-22T22:54:50.625Z"
       },
       "probeVersion": 2,
       "runtimes": [
@@ -1206,7 +1207,7 @@
       "image": "rsprta/selfoss:latest",
       "project": "selfoss",
       "name": "Selfoss",
-      "checkedAt": "2026-10-22T22:45:07.160Z",
+      "checkedAt": "2026-10-22T22:54:52.999Z",
       "status": "affected",
       "platform": "linux/amd64",
       "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
@@ -1215,12 +1216,18 @@
       "publishedAt": "2024-03-16T00:05:39.470199021Z",
       "executionRef": "docker.io/rsprta/selfoss@sha256:411cd5d5986fe2d059ba07769995e29596d0296534f8433df14b24c6d1ad24b7",
       "webEvidence": {
-        "web": null,
+        "web": {
+          "version": "8.0.30",
+          "sapi": "fpm-fcgi",
+          "binary": "/usr/sbin/php-fpm8",
+          "session_upload_progress": "1",
+          "memory_limit": "128M"
+        },
         "os": "NAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.16.9\nPRETTY_NAME=\"Alpine Linux v3.16\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"",
         "packages": "php8-common-8.0.30-r0\nphp8-8.0.30-r0\nphp8-ctype-8.0.30-r0\nphp8-curl-8.0.30-r0\nphp8-dom-8.0.30-r0\nphp8-fpm-8.0.30-r0\nphp8-gd-8.0.30-r0\nphp8-iconv-8.0.30-r0\nphp8-mbstring-8.0.30-r0\nphp8-pdo-8.0.30-r0\nphp8-openssl-8.0.30-r0\nphp8-mysqlnd-8.0.30-r0\nphp8-pdo_mysql-8.0.30-r0\nphp8-pdo_pgsql-8.0.30-r0\nphp8-pdo_sqlite-8.0.30-r0\nphp8-pecl-imagick-3.7.0-r0\nphp8-session-8.0.30-r0\nphp8-simplexml-8.0.30-r0\nphp8-tidy-8.0.30-r0\nphp8-xml-8.0.30-r0\nphp8-xmlwriter-8.0.30-r0",
         "workerConfig": null,
-        "method": "CLI binary; web module not present",
-        "checkedAt": "2026-10-22T22:45:12.718Z"
+        "method": "Harmless PHP request through fpm-fcgi",
+        "checkedAt": "2026-10-22T22:54:59.134Z"
       },
       "probeVersion": 2,
       "runtimes": [
@@ -1229,6 +1236,13 @@
           "version": "8.0.30",
           "status": "below-fixed",
           "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed."
+        },
+        {
+          "sapi": "fpm-fcgi",
+          "version": "8.0.30",
+          "status": "below-fixed",
+          "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed.",
+          "requestVerified": true
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
