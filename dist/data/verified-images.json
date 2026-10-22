@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "advisoryKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
-  "generatedAt": "2026-10-22T22:54:59.607Z",
-  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39868260030",
+  "generatedAt": "2026-10-22T22:59:11.969Z",
+  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39868740475",
   "images": {
     "nextcloud:latest": {
       "image": "nextcloud:latest",
@@ -1201,7 +1201,8 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:59:11.303Z"
     },
     "rsprta/selfoss:latest": {
       "image": "rsprta/selfoss:latest",
