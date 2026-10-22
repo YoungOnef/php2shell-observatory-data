@@ -26,7 +26,7 @@ done
 true`;
 const images=selected?.length?{...previous}:{};const targets=[...new Map(data.projects.filter(p=>p.php).flatMap(p=>p.images.map(i=>[i.image,{...i,project:p.id,name:p.name}]))).values()].filter(i=>!selected?.length||selected.includes(i.image)).slice(0,limit);
 if(selected?.length&&targets.length!==new Set(selected).size)throw new Error('A selected image is not mapped in the catalogue.');
-for(const target of targets){const checkedAt=new Date().toISOString();let result={assessmentKey:advisoryKey,image:target.image,project:target.project,name:target.name,checkedAt,status:'scan-error',platform:'linux/amd64',scope:'Published image runtime binaries on linux/amd64; not the user’s running deployment.'};try{
+for(const target of targets){const checkedAt=new Date().toISOString();let result={runUrl:process.env.GITHUB_RUN_ID?`https://github.com/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`:null,assessmentKey:advisoryKey,image:target.image,project:target.project,name:target.name,checkedAt,status:'scan-error',platform:'linux/amd64',scope:'Published image runtime binaries on linux/amd64; not the user’s running deployment.'};try{
   const meta=await inspectRegistry(target.image);result={...result,digest:meta.digest,immutable:meta.immutable,publishedAt:meta.publishedAt};
   if(reusableEvidence(previous[target.image],meta.digest,previous[target.image]?.assessmentKey,advisoryKey,{force:args.includes('--force'),selected:!!selected?.length})){images[target.image]={...previous[target.image],tagCheckedAt:checkedAt};console.log(`${target.image}: ${images[target.image].status} (same digest)`);continue;}
   let pullRef=meta.immutable;

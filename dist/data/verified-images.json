@@ -49,7 +49,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "fireflyiii/core:latest": {
       "image": "fireflyiii/core:latest",
@@ -103,7 +104,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "matomo:latest": {
       "image": "matomo:latest",
@@ -150,7 +152,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "wordpress:latest": {
       "image": "wordpress:latest",
@@ -197,7 +200,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "phanan/koel:latest": {
       "image": "phanan/koel:latest",
@@ -244,7 +248,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "freshrss/freshrss:latest": {
       "image": "freshrss/freshrss:latest",
@@ -291,7 +296,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "wallabag/wallabag:latest": {
       "image": "wallabag/wallabag:latest",
@@ -342,7 +348,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "leantime/leantime:latest": {
       "image": "leantime/leantime:latest",
@@ -396,7 +403,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "php:fpm": {
       "image": "php:fpm",
@@ -450,7 +458,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "phpmyadmin:5.2.0": {
       "image": "phpmyadmin:5.2.0",
@@ -495,7 +504,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "kanboard/kanboard:latest": {
       "image": "kanboard/kanboard:latest",
@@ -549,7 +559,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "bellamy/wallos:latest": {
       "image": "bellamy/wallos:latest",
@@ -603,7 +614,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "privatebin/nginx-fpm-alpine:latest": {
       "image": "privatebin/nginx-fpm-alpine:latest",
@@ -657,7 +669,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "php:8-fpm": {
       "image": "php:8-fpm",
@@ -711,7 +724,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "php:8.3-fpm": {
       "image": "php:8.3-fpm",
@@ -765,7 +779,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "roundcube/roundcubemail:latest": {
       "image": "roundcube/roundcubemail:latest",
@@ -812,7 +827,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "thecodingmachine/php:8.1-v4-apache-node12": {
       "image": "thecodingmachine/php:8.1-v4-apache-node12",
@@ -857,7 +873,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "matomo:5.0-apache": {
       "image": "matomo:5.0-apache",
@@ -904,7 +921,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "shlinkio/shlink:latest": {
       "assessmentKey": "22ff18647978545286655837813540fe3d31a6790c82173d5e788c9b89f5e2ed",
@@ -958,7 +976,8 @@
           "requestVerified": true
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39869433421"
     },
     "phpmyadmin/phpmyadmin": {
       "image": "phpmyadmin/phpmyadmin",
@@ -1005,7 +1024,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "joomla:latest": {
       "image": "joomla:latest",
@@ -1052,7 +1072,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "kimai/kimai2:apache": {
       "image": "kimai/kimai2:apache",
@@ -1099,7 +1120,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "phpmyadmin:5.2.1": {
       "image": "phpmyadmin:5.2.1",
@@ -1146,7 +1168,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "phpmyadmin": {
       "image": "phpmyadmin",
@@ -1193,7 +1216,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "linkstackorg/linkstack:latest": {
       "image": "linkstackorg/linkstack:latest",
@@ -1240,7 +1264,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39869064993"
     },
     "rsprta/selfoss:latest": {
       "image": "rsprta/selfoss:latest",
@@ -1285,7 +1310,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39868260030"
     },
     "wordpress:6.4.2-php8.1-apache": {
       "image": "wordpress:6.4.2-php8.1-apache",
@@ -1330,7 +1356,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "phpmyadmin:latest": {
       "image": "phpmyadmin:latest",
@@ -1377,7 +1404,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "matomo:5.2.2-apache": {
       "image": "matomo:5.2.2-apache",
@@ -1424,7 +1452,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "phpmyadmin/phpmyadmin:5.1.3": {
       "image": "phpmyadmin/phpmyadmin:5.1.3",
@@ -1469,7 +1498,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "phpmyadmin/phpmyadmin:5.0.1": {
       "image": "phpmyadmin/phpmyadmin:5.0.1",
@@ -1514,7 +1544,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "alcohol/php:8.3-xdebug": {
       "image": "alcohol/php:8.3-xdebug",
@@ -1568,7 +1599,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "php:8.3-rc-alpine3.18": {
       "image": "php:8.3-rc-alpine3.18",
@@ -1619,7 +1651,8 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "docker.io/library/phpmyadmin:latest": {
       "image": "docker.io/library/phpmyadmin:latest",
@@ -1666,7 +1699,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     },
     "lscr.io/linuxserver/bookstack:latest": {
       "image": "lscr.io/linuxserver/bookstack:latest",
@@ -1721,7 +1755,8 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785"
+      "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
     }
   }
 }

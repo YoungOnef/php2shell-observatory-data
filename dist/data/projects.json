@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T23:04:56.398Z",
+  "generatedAt": "2026-10-22T23:08:51.136Z",
   "advisory": {
     "name": "PHP2Shell",
     "cves": [
@@ -3431,7 +3431,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -4755,7 +4757,7 @@
             "https://devdocs.bagisto.com/getting-started/before-you-start.html",
             "https://devdocs.bagisto.com/getting-started/installation"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -5218,7 +5220,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -5236,7 +5240,7 @@
             "https://api.github.com/repos/firefly-iii/firefly-iii/dependency-graph/sbom",
             "https://github.com/firefly-iii/firefly-iii/issues/13087#issuecomment-6324447202"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -6194,7 +6198,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -6408,7 +6414,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -6425,7 +6433,7 @@
             "https://wordpress.org/about/requirements/",
             "https://make.wordpress.org/hosting/handbook/server-environment/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -7366,7 +7374,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -7708,7 +7718,7 @@
             "https://docs.flarum.org/install/",
             "https://docs.flarum.org/1.x/install/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -7856,7 +7866,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -7872,7 +7884,7 @@
           "sources": [
             "https://freshrss.github.io/FreshRSS/en/admins/02_Prerequisites.html"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -9034,7 +9046,7 @@
             "https://github.com/Qloapps/QloApps",
             "https://api.github.com/repos/Qloapps/QloApps/dependency-graph/sbom"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -9992,7 +10004,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -10008,7 +10022,7 @@
           "sources": [
             "https://doc.wallabag.org/admin/installation/requirements/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -10283,7 +10297,7 @@
           "sources": [
             "https://github.com/YOURLS/YOURLS"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -10377,7 +10391,7 @@
             "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings",
             "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -10806,7 +10820,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -10823,7 +10839,7 @@
             "https://github.com/Leantime/leantime/blob/master/composer.json",
             "https://github.com/Leantime/leantime"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -11467,7 +11483,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2026-10-21T19:02:02.771511Z",
           "digest": "sha256:e343d72629421d3c21064ec8d94e0c121790b0e3b2a9f594e8f366123e45ecaa",
@@ -11774,7 +11792,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2023-02-05T08:35:06.651235Z",
           "digest": "sha256:7c8751488b72255047bdc38ea1e9bf6b33b163a3c15ae276b2ac3c1a633a53c6",
@@ -11835,7 +11855,7 @@
             "https://docs.mautic.org/en/7.0/getting_started/how_to_install_mautic.html",
             "https://github.com/mautic/mautic/blob/7.x/composer.json"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -12251,7 +12271,7 @@
           "sources": [
             "https://woocommerce.com/document/server-requirements/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -12815,7 +12835,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -12831,7 +12853,7 @@
           "sources": [
             "https://docs.kanboard.org/v1/admin/requirements/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -13539,7 +13561,7 @@
           "sources": [
             "https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -14218,7 +14240,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -14400,7 +14424,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -14417,7 +14443,7 @@
             "https://github.com/PrivateBin/PrivateBin/blob/master/composer.json",
             "https://github.com/PrivateBin/PrivateBin"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -14632,7 +14658,7 @@
           "sources": [
             "https://docs.sylius.com/public/getting-started/before-you-begin"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -15125,7 +15151,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2026-10-21T18:54:54.504782Z",
           "digest": "sha256:e343d72629421d3c21064ec8d94e0c121790b0e3b2a9f594e8f366123e45ecaa",
@@ -15271,7 +15299,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2026-10-21T22:03:08.709841Z",
           "digest": "sha256:c435accaeb7c535cacf8d6d188fc310431f4fc54545b1694a793069185271dcb",
@@ -15372,7 +15402,7 @@
             "https://packagist.org/packages/opencart/opencart",
             "https://github.com/opencart/opencart/blob/master/docs/getting-started/system-requirements.md"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -15740,7 +15770,7 @@
           "sources": [
             "https://www.adminer.org/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -16538,7 +16568,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -17498,7 +17530,7 @@
           "sources": [
             "https://docs.humhub.org/docs/admin/requirements/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -19026,7 +19058,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-06-09T08:31:17.585195Z",
           "digest": "sha256:b94d01d18dbecfc73e5bf4539822e3ce2d64cac0a19fa54b7f8bc63d001aec10",
@@ -19262,7 +19296,7 @@
             "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/",
             "https://docs.suitecrm.com/admin/compatibility-matrix/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -19675,7 +19709,7 @@
             "https://github.com/openemr/openemr/pull/14773",
             "https://github.com/openemr/openemr/blob/b171ac28a57e5da96b1b8eaceb7324edac045948/docker/binary/README.md"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -19955,10 +19989,11 @@
           "status": "fixed",
           "checkedAt": null,
           "verification": {
+            "assessmentKey": "22ff18647978545286655837813540fe3d31a6790c82173d5e788c9b89f5e2ed",
             "image": "shlinkio/shlink:latest",
             "project": "shlink",
             "name": "Shlink",
-            "checkedAt": "2026-10-22T22:43:05.877Z",
+            "checkedAt": "2026-10-22T23:05:12.089Z",
             "status": "fixed",
             "platform": "linux/amd64",
             "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
@@ -19978,7 +20013,7 @@
               "packages": "",
               "workerConfig": null,
               "method": "Harmless PHP request through cgi-fcgi",
-              "checkedAt": "2026-10-22T22:43:14.490Z"
+              "checkedAt": "2026-10-22T23:05:23.731Z"
             },
             "probeVersion": 2,
             "runtimes": [
@@ -20005,7 +20040,8 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39869433421"
           }
         },
         {
@@ -20059,7 +20095,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2024-06-07T05:50:13.439393Z",
           "digest": "sha256:5a629a1fafa6ecdfb1fb705bf72cc7b1ad3d06e54b7d8be3591ba9a65d26ce9a",
@@ -20120,7 +20158,7 @@
             "https://packagist.org/packages/shlinkio/shlink",
             "https://github.com/shlinkio/shlink"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -20913,7 +20951,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         },
@@ -20968,7 +21008,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-10-08T16:48:16.525582Z",
           "digest": "sha256:42a200db07b4e70fbf32c594ad4521cf16399b8e54bbb5adceae98e7566dfbeb",
@@ -21267,7 +21309,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -21288,7 +21332,7 @@
             "https://github.com/kimai/kimai/releases/tag/2.70.1",
             "https://github.com/kimai/kimai/pull/6262#issuecomment-6322087754"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -21794,7 +21838,7 @@
           "sources": [
             "https://github.com/dokuwiki/dokuwiki/blob/master/composer.json"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -22012,7 +22056,7 @@
             "https://github.com/freescout-help-desk/freescout/wiki/Installation-Guide",
             "https://github.com/freescout-help-desk/freescout"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -22463,7 +22507,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-10-08T16:48:16.525582Z",
           "digest": "sha256:42a200db07b4e70fbf32c594ad4521cf16399b8e54bbb5adceae98e7566dfbeb",
@@ -22634,7 +22680,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-01-15T21:45:27.46923Z",
           "digest": "sha256:6e75aa8f767c5c9b7f3859e7f3006ad669739159d4e312e7570b66082da7f949",
@@ -23071,7 +23119,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2026-10-22T04:41:00.860034Z",
           "digest": "sha256:62a50b1419fe55b9b4c3cd6f5aed03a18f8f5b4a236f24735d76400bea75a5ff",
@@ -24251,7 +24301,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39869064993"
           },
           "role": "primary"
         }
@@ -24347,7 +24399,7 @@
             "https://github.com/shaarli/Shaarli/blob/master/composer.json",
             "https://github.com/shaarli/Shaarli/issues/2297#issuecomment-6320488435"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -25425,7 +25477,7 @@
           "sources": [
             "https://craftcms.com/docs/5.x/requirements.html"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -25565,7 +25617,7 @@
           "sources": [
             "https://docs.espocrm.com/administration/server-configuration/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -26515,7 +26567,7 @@
             "https://github.com/InvoicePlane/InvoicePlane/blob/develop/.github/docs/INSTALLATION.md",
             "https://github.com/InvoicePlane/InvoicePlane/blob/develop/composer.json"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -26911,7 +26963,7 @@
           "sources": [
             "https://docs.filegator.io/install.html"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -29226,7 +29278,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39868260030"
           },
           "role": "primary"
         }
@@ -31141,7 +31195,7 @@
           "sources": [
             "https://packagist.org/packages/phpbb/phpbb"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -31566,7 +31620,7 @@
             "https://github.com/projectsend/projectsend/blob/main/INSTALL.md",
             "https://docs.projectsend.org/about/installation/requirements"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -31897,7 +31951,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2024-01-13T23:18:46.150692Z",
           "digest": "sha256:edb987c81a75daa2cde1520b307ef7b8490864301468b564cdb61b58f920dc1c",
@@ -33017,7 +33073,7 @@
             "https://github.com/nilsteampassnet/TeamPass",
             "https://github.com/nilsteampassnet/TeamPass/blob/master/composer.json"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -33289,7 +33345,7 @@
           "sources": [
             "https://github.com/mantisbt/mantisbt"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -34279,7 +34335,7 @@
             "https://docs.fossbilling.org/getting-started/requirements/",
             "https://github.com/boxbilling/boxbilling"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -34382,7 +34438,7 @@
           "sources": [
             "https://github.com/the-djmaze/snappymail"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -34726,7 +34782,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2026-10-22T04:41:00.860034Z",
           "digest": "sha256:62a50b1419fe55b9b4c3cd6f5aed03a18f8f5b4a236f24735d76400bea75a5ff",
@@ -36104,7 +36162,7 @@
             "https://wintercms.com/en/",
             "https://wintercms.com/blog/post/we-have-forked-october-cms"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -36610,7 +36668,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-10-08T16:48:16.525582Z",
           "digest": "sha256:42a200db07b4e70fbf32c594ad4521cf16399b8e54bbb5adceae98e7566dfbeb",
@@ -38175,7 +38235,7 @@
           "sources": [
             "https://docs.mybb.com/1.8/install/requirements/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -38882,7 +38942,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2026-10-22T04:41:00.860034Z",
           "digest": "sha256:62a50b1419fe55b9b4c3cd6f5aed03a18f8f5b4a236f24735d76400bea75a5ff",
@@ -39858,7 +39920,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-03-14T18:11:41.178263Z",
           "digest": "sha256:a9b540667487d8d4b7ac5dbea190512dfa88d301593bd0f6bc67eb19a6787d80",
@@ -40231,7 +40295,7 @@
             "https://docs.backdropcms.org/documentation/system-requirements",
             "https://backdropcms.org/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -41142,7 +41206,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2022-02-11T14:20:48.632452Z",
           "digest": null,
@@ -42332,7 +42398,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2020-01-14T01:11:12.078862Z",
           "digest": null,
@@ -42563,7 +42631,7 @@
             "https://doc.thelia.net/docs/3.0/getting-started/installation",
             "https://doc.thelia.net/docs/3.0/upgrading/migrate"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -42696,7 +42764,7 @@
           "sources": [
             "https://resources.phplist.com/system/start"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -44364,7 +44432,7 @@
           "sources": [
             "https://github.com/SimpleMachines/SMF/blob/release-3.0/composer.json"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -46181,7 +46249,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-10-08T16:48:16.525582Z",
           "digest": "sha256:42a200db07b4e70fbf32c594ad4521cf16399b8e54bbb5adceae98e7566dfbeb",
@@ -46206,7 +46276,7 @@
           "sources": [
             "https://docs.boltcms.io/5.2/getting-started/requirements"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -47356,7 +47426,7 @@
           "sources": [
             "https://omeka.org/s/docs/user-manual/install/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -47814,7 +47884,7 @@
             "https://github.com/ILIAS-eLearning/ILIAS/blob/release_11/docs/configuration/install.md",
             "https://github.com/ILIAS-eLearning/ILIAS/releases"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -48634,7 +48704,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-01-15T21:45:27.46923Z",
           "digest": "sha256:6e75aa8f767c5c9b7f3859e7f3006ad669739159d4e312e7570b66082da7f949",
@@ -50180,7 +50252,7 @@
           "sources": [
             "https://docs.collectiveaccess.org/providence/user/setup/systemReq"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -51037,7 +51109,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-10-08T16:48:16.525582Z",
           "digest": "sha256:42a200db07b4e70fbf32c594ad4521cf16399b8e54bbb5adceae98e7566dfbeb",
@@ -52216,7 +52290,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2026-10-19T15:15:34.980484Z",
           "digest": "sha256:3704e79bf2584808cfcddd6f88e8eee1f20a9fbaa70a767572c7bca2bd99e578",
@@ -52284,7 +52360,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2024-04-29T23:04:43.095657Z",
           "digest": "sha256:d206a50cbb924603182318c843ffadbfce0e9c0c87764c986e65c329131c750b",
@@ -52995,7 +53073,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2026-10-22T04:41:00.860034Z",
           "digest": "sha256:62a50b1419fe55b9b4c3cd6f5aed03a18f8f5b4a236f24735d76400bea75a5ff",
@@ -53096,7 +53176,7 @@
             "https://packagist.org/packages/egroupware/egroupware",
             "https://github.com/EGroupware/egroupware/blob/master/composer.json"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -54245,7 +54325,7 @@
             "https://buddypress.trac.wordpress.org/changeset/14231",
             "https://wordpress.org/plugins/buddypress/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -54684,7 +54764,7 @@
           "sources": [
             "https://docs.oxid-esales.com/eshop/de/7.3/installation/neu-installation/server-und-systemvoraussetzungen.html"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -55687,7 +55767,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "error": "Registry returned HTTP 404",
           "role": "companion"
@@ -56584,7 +56666,7 @@
           "sources": [
             "https://docs.openeclass.org/en/4.1/install"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -57859,7 +57941,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+            "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "updatedAt": "2025-10-08T16:48:16.525582Z",
           "digest": "sha256:42a200db07b4e70fbf32c594ad4521cf16399b8e54bbb5adceae98e7566dfbeb",
@@ -62924,7 +63008,9 @@
                 "requestVerified": true
               }
             ],
-            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+            "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+            "assessmentKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
+            "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39866264022"
           },
           "role": "primary"
         }
@@ -62941,7 +63027,7 @@
             "https://www.bookstackapp.com/docs/admin/installation/",
             "https://www.bookstackapp.com/blog/php-security-release-critical/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -64437,7 +64523,7 @@
             "https://www.drupal.org/project/drupal/releases/10.6.19",
             "https://packagist.org/packages/drupal/core"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -64493,7 +64579,7 @@
           "sources": [
             "https://www.drupal.org/project/commerce"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -64811,7 +64897,7 @@
           "sources": [
             "https://docs.filerun.com/requirements"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -65940,7 +66026,7 @@
           "sources": [
             "https://www.mediawiki.org/wiki/Manual:Installation_requirements"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -66058,7 +66144,7 @@
             "https://download.moodle.org/releases/latest/",
             "https://packaging.moodle.org/stable503/moodle-5.3.tgz.sha256"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -66680,7 +66766,7 @@
           "sources": [
             "https://www.pmwiki.org/wiki/PmWiki/Requirements"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -67176,7 +67262,7 @@
           "sources": [
             "https://www.resourcespace.com/knowledge-base/systemadmin/general_requirements?from_rs=true"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -67534,7 +67620,7 @@
             "https://www.seeddms.org/about/",
             "https://www.seeddms.org/download/"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
@@ -67980,7 +68066,7 @@
           "sources": [
             "https://www.spip.net/en_article6659.html"
           ],
-          "checkedAt": "2026-10-22T23:04:56.398Z",
+          "checkedAt": "2026-10-22T23:08:51.136Z",
           "cves": [
             "CVE-2026-109618",
             "CVE-2026-109619"
