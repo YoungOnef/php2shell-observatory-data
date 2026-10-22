@@ -1,0 +1,18 @@
+[
+  {
+    "at": "2026-10-22T22:12:52.553Z",
+    "catalogued": 1358,
+    "githubRanked": 1131,
+    "php": 318,
+    "patched": 0,
+    "pending": 0,
+    "review": 0,
+    "images": 42,
+    "sourceTreesChecked": 1134,
+    "fixedImages": 20,
+    "affectedImages": 14,
+    "scanErrors": 0,
+    "scanningImages": 0,
+    "vendorFixes": 4
+  }
+]
