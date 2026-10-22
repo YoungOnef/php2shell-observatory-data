@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T22:01:05.291Z",
-  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39861251656",
+  "generatedAt": "2026-10-22T22:07:16.130Z",
+  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39861964983",
   "images": {
     "nextcloud:latest": {
       "image": "nextcloud:latest",
@@ -23,7 +23,8 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:03:03.925Z"
     },
     "fireflyiii/core:latest": {
       "image": "fireflyiii/core:latest",
@@ -52,7 +53,8 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:03:04.486Z"
     },
     "matomo:latest": {
       "image": "matomo:latest",
@@ -74,7 +76,8 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:03:04.819Z"
     },
     "wordpress:latest": {
       "image": "wordpress:latest",
@@ -96,7 +99,8 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:03:05.129Z"
     },
     "phanan/koel:latest": {
       "image": "phanan/koel:latest",
@@ -118,7 +122,8 @@
           "reason": "Below upstream fix threshold; vendor backports require separate evidence."
         }
       ],
-      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
+      "tagCheckedAt": "2026-10-22T22:03:05.444Z"
     },
     "freshrss/freshrss:latest": {
       "image": "freshrss/freshrss:latest",
@@ -140,35 +145,36 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:03:05.779Z"
     },
     "wallabag/wallabag:latest": {
       "image": "wallabag/wallabag:latest",
       "project": "wallabag",
       "name": "Wallabag",
-      "checkedAt": "2026-10-22T21:59:05.147Z",
-      "status": "scan-error",
+      "checkedAt": "2026-10-22T22:03:06.079Z",
+      "status": "affected",
       "platform": "linux/amd64",
       "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
       "digest": "sha256:82ade66b403d67c05732f9f08003034509f6499e9f487b858c0b77524b28545d",
       "immutable": "docker.io/wallabag/wallabag@sha256:82ade66b403d67c05732f9f08003034509f6499e9f487b858c0b77524b28545d",
       "publishedAt": "2025-10-07T08:18:01.960915532Z",
+      "executionRef": "docker.io/wallabag/wallabag@sha256:82ade66b403d67c05732f9f08003034509f6499e9f487b858c0b77524b28545d",
       "runtimes": [
         {
           "sapi": "CLI",
           "version": "8.1.32",
-          "status": "unknown",
-          "reason": "No verified fix threshold for this branch. Check vendor backports or update the advisory."
+          "status": "below-fixed",
+          "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed."
         },
         {
           "sapi": "FPM",
           "version": "8.1.32",
-          "status": "unknown",
-          "reason": "No verified fix threshold for this branch. Check vendor backports or update the advisory."
+          "status": "below-fixed",
+          "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed."
         }
       ],
-      "error": "This PHP branch has no verified upstream version threshold; automatic vendor assessment is required.",
-      "reason": "Automatic inspection failed; it will be retried on the next run."
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
     },
     "leantime/leantime:latest": {
       "image": "leantime/leantime:latest",
@@ -197,7 +203,60 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:03:17.962Z"
+    },
+    "php:fpm": {
+      "image": "php:fpm",
+      "project": "bunkerweb",
+      "name": "BunkerWeb",
+      "checkedAt": "2026-10-22T22:03:18.453Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:237a126ccaf0a26348c272fe71155e69a69f827b3c921178f7367e376cd8758d",
+      "immutable": "docker.io/library/php@sha256:237a126ccaf0a26348c272fe71155e69a69f827b3c921178f7367e376cd8758d",
+      "publishedAt": "2026-10-21T15:51:00.867960163Z",
+      "executionRef": "docker.io/library/php@sha256:237a126ccaf0a26348c272fe71155e69a69f827b3c921178f7367e376cd8758d",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "phpmyadmin:5.2.0": {
+      "image": "phpmyadmin:5.2.0",
+      "project": "mautic",
+      "name": "Mautic",
+      "checkedAt": "2026-10-22T22:03:28.754Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:66f53b12b9f7efd9e50b7dbf84fcfce027a6267da37d324a80b2a67421ec907c",
+      "immutable": "docker.io/library/phpmyadmin@sha256:66f53b12b9f7efd9e50b7dbf84fcfce027a6267da37d324a80b2a67421ec907c",
+      "publishedAt": "2023-02-05T04:15:50.008258845Z",
+      "executionRef": "docker.io/library/phpmyadmin@sha256:66f53b12b9f7efd9e50b7dbf84fcfce027a6267da37d324a80b2a67421ec907c",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.0.27",
+          "status": "below-fixed",
+          "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
     },
     "kanboard/kanboard:latest": {
       "image": "kanboard/kanboard:latest",
@@ -226,7 +285,8 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:03:40.573Z"
     },
     "bellamy/wallos:latest": {
       "image": "bellamy/wallos:latest",
@@ -255,7 +315,8 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:03:41.143Z"
     },
     "privatebin/nginx-fpm-alpine:latest": {
       "image": "privatebin/nginx-fpm-alpine:latest",
@@ -284,6 +345,67 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:03:41.502Z"
+    },
+    "php:8-fpm": {
+      "image": "php:8-fpm",
+      "project": "opencart",
+      "name": "OpenCart",
+      "checkedAt": "2026-10-22T22:03:41.884Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:237a126ccaf0a26348c272fe71155e69a69f827b3c921178f7367e376cd8758d",
+      "immutable": "docker.io/library/php@sha256:237a126ccaf0a26348c272fe71155e69a69f827b3c921178f7367e376cd8758d",
+      "publishedAt": "2026-10-21T15:51:00.867960163Z",
+      "executionRef": "docker.io/library/php@sha256:237a126ccaf0a26348c272fe71155e69a69f827b3c921178f7367e376cd8758d",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "php:8.3-fpm": {
+      "image": "php:8.3-fpm",
+      "project": "opencart",
+      "name": "OpenCart",
+      "checkedAt": "2026-10-22T22:03:51.915Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:54e8a8dbd761922ca28c7ba71dd47121a5a35b7e828ffc4d3885eae9f20f06b2",
+      "immutable": "docker.io/library/php@sha256:54e8a8dbd761922ca28c7ba71dd47121a5a35b7e828ffc4d3885eae9f20f06b2",
+      "publishedAt": "2026-10-21T15:59:56.565950161Z",
+      "executionRef": "docker.io/library/php@sha256:54e8a8dbd761922ca28c7ba71dd47121a5a35b7e828ffc4d3885eae9f20f06b2",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
     },
     "roundcube/roundcubemail:latest": {
@@ -306,7 +428,46 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:04:01.828Z"
+    },
+    "thecodingmachine/php:8.1-v4-apache-node12": {
+      "image": "thecodingmachine/php:8.1-v4-apache-node12",
+      "project": "workadventure",
+      "name": "WorkAdventure",
+      "checkedAt": "2026-10-22T22:04:02.423Z",
+      "status": "scan-error",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:29e5f4fe42bd4e23289d8f38124cfba929e63ffd2018ad9c0423cf2114ad3ab2",
+      "immutable": "docker.io/thecodingmachine/php@sha256:29e5f4fe42bd4e23289d8f38124cfba929e63ffd2018ad9c0423cf2114ad3ab2",
+      "publishedAt": "2025-06-09T08:08:31.016235354Z",
+      "executionRef": "docker.io/thecodingmachine/php@sha256:29e5f4fe42bd4e23289d8f38124cfba929e63ffd2018ad9c0423cf2114ad3ab2",
+      "error": "sudo: effective uid is not 0, is /usr/bin/sudo on a file system with the 'nosuid' option set or an NFS file system without root privileges?\nUnexpected PHP proxy output:\nWarning: file_put_contents(/opt/php_env_var_cache.php): Failed to open stream: Read-only file system in /usr/local/bin/check_php_env_var_changes.php on line 28\n",
+      "reason": "Automatic inspection failed; it will be retried on the next run."
+    },
+    "matomo:5.0-apache": {
+      "image": "matomo:5.0-apache",
+      "project": "shlink",
+      "name": "Shlink",
+      "checkedAt": "2026-10-22T22:04:17.383Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:6a33bddaf7629bcc25cc150eea61a3e6f57d11a7dc54919bdbfd1fbcfe81876f",
+      "immutable": "docker.io/library/matomo@sha256:6a33bddaf7629bcc25cc150eea61a3e6f57d11a7dc54919bdbfd1fbcfe81876f",
+      "publishedAt": "2024-06-06T05:16:53.361465636Z",
+      "executionRef": "docker.io/library/matomo@sha256:6a33bddaf7629bcc25cc150eea61a3e6f57d11a7dc54919bdbfd1fbcfe81876f",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.2.19",
+          "status": "below-fixed",
+          "minimum": "8.2.35",
+          "reason": "Below upstream fix threshold; vendor backports require separate evidence."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
     },
     "joomla:latest": {
       "image": "joomla:latest",
@@ -328,7 +489,31 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:04:32.395Z"
+    },
+    "phpmyadmin/phpmyadmin": {
+      "image": "phpmyadmin/phpmyadmin",
+      "project": "foodcoopshop",
+      "name": "FoodCoopShop",
+      "checkedAt": "2026-10-22T22:04:32.948Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:42a200db07b4e70fbf32c594ad4521cf16399b8e54bbb5adceae98e7566dfbeb",
+      "immutable": "docker.io/phpmyadmin/phpmyadmin@sha256:42a200db07b4e70fbf32c594ad4521cf16399b8e54bbb5adceae98e7566dfbeb",
+      "publishedAt": "2025-10-08T12:32:11.506893357-04:00",
+      "executionRef": "docker.io/phpmyadmin/phpmyadmin@sha256:42a200db07b4e70fbf32c594ad4521cf16399b8e54bbb5adceae98e7566dfbeb",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.26",
+          "status": "below-fixed",
+          "minimum": "8.3.36",
+          "reason": "Below upstream fix threshold; vendor backports require separate evidence."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
     },
     "kimai/kimai2:apache": {
       "image": "kimai/kimai2:apache",
@@ -341,6 +526,53 @@
       "digest": "sha256:5493f83b0f6378a0127c325b628faa40fa1654874117e15c5c32000b721ce0aa",
       "immutable": "docker.io/kimai/kimai2@sha256:5493f83b0f6378a0127c325b628faa40fa1654874117e15c5c32000b721ce0aa",
       "publishedAt": "2026-10-21T22:03:55.93974397Z",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:04:54.210Z"
+    },
+    "phpmyadmin:5.2.1": {
+      "image": "phpmyadmin:5.2.1",
+      "project": "plainpad",
+      "name": "Plainpad",
+      "checkedAt": "2026-10-22T22:04:54.699Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:02ca8a185af8a72811316b7789565970a7b3b74e83366076dcdd7618f62a8cf5",
+      "immutable": "docker.io/library/phpmyadmin@sha256:02ca8a185af8a72811316b7789565970a7b3b74e83366076dcdd7618f62a8cf5",
+      "publishedAt": "2025-01-14T13:39:35Z",
+      "executionRef": "docker.io/library/phpmyadmin@sha256:02ca8a185af8a72811316b7789565970a7b3b74e83366076dcdd7618f62a8cf5",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.2.27",
+          "status": "below-fixed",
+          "minimum": "8.2.35",
+          "reason": "Below upstream fix threshold; vendor backports require separate evidence."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+    },
+    "phpmyadmin": {
+      "image": "phpmyadmin",
+      "project": "egroupware",
+      "name": "egroupware",
+      "checkedAt": "2026-10-22T22:05:06.684Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:832ef7f6f9ab07f92e82441673a14ef48af672d0a4666620e014dc22e0419e53",
+      "immutable": "docker.io/library/phpmyadmin@sha256:832ef7f6f9ab07f92e82441673a14ef48af672d0a4666620e014dc22e0419e53",
+      "publishedAt": "2026-10-21T16:28:19.595942749Z",
+      "executionRef": "docker.io/library/phpmyadmin@sha256:832ef7f6f9ab07f92e82441673a14ef48af672d0a4666620e014dc22e0419e53",
       "runtimes": [
         {
           "sapi": "CLI",
@@ -372,43 +604,242 @@
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
+      "tagCheckedAt": "2026-10-22T22:05:19.176Z"
     },
     "rsprta/selfoss:latest": {
       "image": "rsprta/selfoss:latest",
       "project": "selfoss",
       "name": "Selfoss",
-      "checkedAt": "2026-10-22T22:00:56.362Z",
-      "status": "scan-error",
+      "checkedAt": "2026-10-22T22:05:19.631Z",
+      "status": "affected",
       "platform": "linux/amd64",
       "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
       "digest": "sha256:411cd5d5986fe2d059ba07769995e29596d0296534f8433df14b24c6d1ad24b7",
       "immutable": "docker.io/rsprta/selfoss@sha256:411cd5d5986fe2d059ba07769995e29596d0296534f8433df14b24c6d1ad24b7",
       "publishedAt": "2024-03-16T00:05:39.470199021Z",
+      "executionRef": "docker.io/rsprta/selfoss@sha256:411cd5d5986fe2d059ba07769995e29596d0296534f8433df14b24c6d1ad24b7",
       "runtimes": [
         {
           "sapi": "CLI",
           "version": "8.0.30",
-          "status": "unknown",
-          "reason": "No verified fix threshold for this branch. Check vendor backports or update the advisory."
+          "status": "below-fixed",
+          "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed."
         }
       ],
-      "error": "This PHP branch has no verified upstream version threshold; automatic vendor assessment is required.",
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+    },
+    "wordpress:6.4.2-php8.1-apache": {
+      "image": "wordpress:6.4.2-php8.1-apache",
+      "project": "coral",
+      "name": "Coral",
+      "checkedAt": "2026-10-22T22:05:24.519Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:f7c1e9d5be9b527c9c6562669b1ce23952ea1a81e494a6481ef24207dd2ab92d",
+      "immutable": "docker.io/library/wordpress@sha256:f7c1e9d5be9b527c9c6562669b1ce23952ea1a81e494a6481ef24207dd2ab92d",
+      "publishedAt": "2023-12-06T20:31:30Z",
+      "executionRef": "docker.io/library/wordpress@sha256:f7c1e9d5be9b527c9c6562669b1ce23952ea1a81e494a6481ef24207dd2ab92d",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.1.27",
+          "status": "below-fixed",
+          "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+    },
+    "phpmyadmin:latest": {
+      "image": "phpmyadmin:latest",
+      "project": "vvveb-cms",
+      "name": "Vvveb CMS",
+      "checkedAt": "2026-10-22T22:05:39.729Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:832ef7f6f9ab07f92e82441673a14ef48af672d0a4666620e014dc22e0419e53",
+      "immutable": "docker.io/library/phpmyadmin@sha256:832ef7f6f9ab07f92e82441673a14ef48af672d0a4666620e014dc22e0419e53",
+      "publishedAt": "2026-10-21T16:28:19.595942749Z",
+      "executionRef": "docker.io/library/phpmyadmin@sha256:832ef7f6f9ab07f92e82441673a14ef48af672d0a4666620e014dc22e0419e53",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
+    },
+    "matomo:5.2.2-apache": {
+      "image": "matomo:5.2.2-apache",
+      "project": "dspace",
+      "name": "DSpace",
+      "checkedAt": "2026-10-22T22:05:52.424Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:652440be76c3252d555d5687f29d25fda27c9c4650a503a655308daf4332d9bf",
+      "immutable": "docker.io/library/matomo@sha256:652440be76c3252d555d5687f29d25fda27c9c4650a503a655308daf4332d9bf",
+      "publishedAt": "2025-01-24T15:44:16Z",
+      "executionRef": "docker.io/library/matomo@sha256:652440be76c3252d555d5687f29d25fda27c9c4650a503a655308daf4332d9bf",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.19",
+          "status": "below-fixed",
+          "minimum": "8.3.36",
+          "reason": "Below upstream fix threshold; vendor backports require separate evidence."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+    },
+    "phpmyadmin/phpmyadmin:5.1.3": {
+      "image": "phpmyadmin/phpmyadmin:5.1.3",
+      "project": "openbudgeteer",
+      "name": "OpenBudgeteer",
+      "checkedAt": "2026-10-22T22:06:07.397Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:1d3f6ec798a9faa201ada6678797f399202928e677dfccbb698ef0b511c798b0",
+      "immutable": "docker.io/phpmyadmin/phpmyadmin@sha256:1d3f6ec798a9faa201ada6678797f399202928e677dfccbb698ef0b511c798b0",
+      "publishedAt": "2022-02-11T14:12:42.0268928Z",
+      "executionRef": "docker.io/phpmyadmin/phpmyadmin@sha256:1d3f6ec798a9faa201ada6678797f399202928e677dfccbb698ef0b511c798b0",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.0.15",
+          "status": "below-fixed",
+          "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+    },
+    "phpmyadmin/phpmyadmin:5.0.1": {
+      "image": "phpmyadmin/phpmyadmin:5.0.1",
+      "project": "lingarr",
+      "name": "Lingarr",
+      "checkedAt": "2026-10-22T22:06:18.736Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:d2191935bda8c825bcf51d1c659efcd4d80a4f5da907ea72c8517c8144136de4",
+      "immutable": "docker.io/phpmyadmin/phpmyadmin@sha256:d2191935bda8c825bcf51d1c659efcd4d80a4f5da907ea72c8517c8144136de4",
+      "publishedAt": "2020-01-14T01:10:53.656516983Z",
+      "executionRef": "docker.io/phpmyadmin/phpmyadmin@sha256:d2191935bda8c825bcf51d1c659efcd4d80a4f5da907ea72c8517c8144136de4",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "7.4.1",
+          "status": "below-fixed",
+          "reason": "Legacy PHP branch has no supported upstream fixed release. No vendor backport has been automatically confirmed."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+    },
+    "alcohol/php:8.3-xdebug": {
+      "image": "alcohol/php:8.3-xdebug",
+      "project": "zenphoto",
+      "name": "Zenphoto",
+      "checkedAt": "2026-10-22T22:06:29.724Z",
+      "status": "affected",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:932993341f21cf4ff7707ba89e551af3f17399ee2a43792955b9832900f26d0d",
+      "immutable": "docker.io/alcohol/php@sha256:932993341f21cf4ff7707ba89e551af3f17399ee2a43792955b9832900f26d0d",
+      "publishedAt": "2026-10-19T15:15:17.499251987Z",
+      "executionRef": "docker.io/alcohol/php@sha256:932993341f21cf4ff7707ba89e551af3f17399ee2a43792955b9832900f26d0d",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.35",
+          "status": "below-fixed",
+          "minimum": "8.3.36",
+          "reason": "Below upstream fix threshold; vendor backports require separate evidence."
+        },
+        {
+          "sapi": "CGI",
+          "version": "8.3.35",
+          "status": "below-fixed",
+          "minimum": "8.3.36",
+          "reason": "Below upstream fix threshold; vendor backports require separate evidence."
+        }
+      ],
+      "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed."
+    },
+    "php:8.3-rc-alpine3.18": {
+      "image": "php:8.3-rc-alpine3.18",
+      "project": "zenphoto",
+      "name": "Zenphoto",
+      "checkedAt": "2026-10-22T22:06:45.855Z",
+      "status": "scan-error",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:932b2a52d44978aba726a3680be2a8c8d33e9af53b1d383a37fd59f9e027f5f1",
+      "immutable": "docker.io/library/php@sha256:932b2a52d44978aba726a3680be2a8c8d33e9af53b1d383a37fd59f9e027f5f1",
+      "publishedAt": "2024-04-26T23:16:57.900234899Z",
+      "executionRef": "docker.io/library/php@sha256:932b2a52d44978aba726a3680be2a8c8d33e9af53b1d383a37fd59f9e027f5f1",
+      "runtimes": [],
+      "error": "No queryable PHP runtime found in the image. Automatic retry required.",
       "reason": "Automatic inspection failed; it will be retried on the next run."
+    },
+    "docker.io/library/phpmyadmin:latest": {
+      "image": "docker.io/library/phpmyadmin:latest",
+      "project": "traq",
+      "name": "Traq",
+      "checkedAt": "2026-10-22T22:06:49.191Z",
+      "status": "fixed",
+      "platform": "linux/amd64",
+      "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
+      "digest": "sha256:832ef7f6f9ab07f92e82441673a14ef48af672d0a4666620e014dc22e0419e53",
+      "immutable": "docker.io/library/phpmyadmin@sha256:832ef7f6f9ab07f92e82441673a14ef48af672d0a4666620e014dc22e0419e53",
+      "publishedAt": "2026-10-21T16:28:19.595942749Z",
+      "executionRef": "docker.io/library/phpmyadmin@sha256:832ef7f6f9ab07f92e82441673a14ef48af672d0a4666620e014dc22e0419e53",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
     },
     "lscr.io/linuxserver/bookstack:latest": {
       "image": "lscr.io/linuxserver/bookstack:latest",
       "project": "bookstack",
       "name": "BookStack",
-      "checkedAt": "2026-10-22T22:01:03.272Z",
-      "status": "scan-error",
+      "checkedAt": "2026-10-22T22:07:01.740Z",
+      "status": "fixed",
       "platform": "linux/amd64",
       "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
       "digest": "sha256:610ccd25f95859535ed907936484718fc8cc75d2139e7a4fe938e11ab2a2ab6f",
       "immutable": "lscr.io/linuxserver/bookstack@sha256:610ccd25f95859535ed907936484718fc8cc75d2139e7a4fe938e11ab2a2ab6f",
       "publishedAt": "2026-10-21T20:26:59.76434546Z",
-      "error": "Error response from daemon: toomanyrequests: retry-after: 1.048028ms, allowed: 44000/minute\n",
-      "reason": "Automatic inspection failed; it will be retried on the next run."
+      "mirror": "ghcr.io/linuxserver/bookstack@sha256:610ccd25f95859535ed907936484718fc8cc75d2139e7a4fe938e11ab2a2ab6f",
+      "executionRef": "ghcr.io/linuxserver/bookstack@sha256:610ccd25f95859535ed907936484718fc8cc75d2139e7a4fe938e11ab2a2ab6f",
+      "runtimes": [
+        {
+          "sapi": "CLI",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "FPM",
+          "version": "8.5.12",
+          "status": "patched",
+          "minimum": "8.5.12",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        }
+      ],
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
     }
   }
 }
