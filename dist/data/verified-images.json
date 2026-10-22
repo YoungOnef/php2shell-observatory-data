@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "advisoryKey": "02cb098f3402c978ed1b837f57e5da01769ad0f953f71ae1c9b8fb4b6ac2c785",
-  "generatedAt": "2026-10-22T22:59:11.969Z",
-  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39868740475",
+  "generatedAt": "2026-10-22T23:02:27.216Z",
+  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39869064993",
   "images": {
     "nextcloud:latest": {
       "image": "nextcloud:latest",
@@ -1175,7 +1175,7 @@
       "image": "linkstackorg/linkstack:latest",
       "project": "linkstack",
       "name": "LinkStack",
-      "checkedAt": "2026-10-22T22:54:38.693Z",
+      "checkedAt": "2026-10-22T23:02:00.115Z",
       "status": "fixed",
       "platform": "linux/amd64",
       "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
@@ -1184,12 +1184,18 @@
       "publishedAt": "2026-10-22T07:30:06.113272117Z",
       "executionRef": "docker.io/linkstackorg/linkstack@sha256:9326a919895adc1f304510b48887befd3d57c7fc377d71decb69d5d256ba922b",
       "webEvidence": {
-        "web": null,
+        "web": {
+          "version": "8.3.36",
+          "sapi": "apache2handler",
+          "binary": "",
+          "session_upload_progress": "1",
+          "memory_limit": "128M"
+        },
         "os": "NAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.25.0_alpha20260805\nPRETTY_NAME=\"Alpine Linux edge\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"",
         "packages": "php83-8.3.36-r0\nphp83-apache2-8.3.36-r0\nphp83-bcmath-8.3.36-r0\nphp83-bz2-8.3.36-r0\nphp83-calendar-8.3.36-r0\nphp83-common-8.3.36-r0\nphp83-ctype-8.3.36-r0\nphp83-curl-8.3.36-r0\nphp83-dom-8.3.36-r0\nphp83-fileinfo-8.3.36-r0\nphp83-gd-8.3.36-r0\nphp83-iconv-8.3.36-r0\nphp83-mbstring-8.3.36-r0\nphp83-mysqli-8.3.36-r0\nphp83-mysqlnd-8.3.36-r0\nphp83-openssl-8.3.36-r0\nphp83-pdo-8.3.36-r0\nphp83-pdo_mysql-8.3.36-r0\nphp83-pdo_pgsql-8.3.36-r0\nphp83-pdo_sqlite-8.3.36-r0\nphp83-pecl-igbinary-3.2.17_rc1-r0\nphp83-pecl-msgpack-3.0.1-r0\nphp83-pecl-redis-6.3.0-r0\nphp83-phar-8.3.36-r0\nphp83-session-8.3.36-r0\nphp83-sockets-8.3.36-r0\nphp83-tokenizer-8.3.36-r0\nphp83-xml-8.3.36-r0\nphp83-xmlwriter-8.3.36-r0\nphp83-zip-8.3.36-r0",
         "workerConfig": null,
-        "method": "CLI binary; separate web SAPI not detected by this probe",
-        "checkedAt": "2026-10-22T22:54:50.625Z"
+        "method": "Harmless PHP request through apache2handler",
+        "checkedAt": "2026-10-22T23:02:22.391Z"
       },
       "probeVersion": 2,
       "runtimes": [
@@ -1199,10 +1205,17 @@
           "status": "patched",
           "minimum": "8.3.36",
           "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI."
+        },
+        {
+          "sapi": "apache2handler",
+          "version": "8.3.36",
+          "status": "patched",
+          "minimum": "8.3.36",
+          "reason": "Meets the upstream fixed version for this PHP branch. CLI evidence does not attest the web SAPI.",
+          "requestVerified": true
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-22T22:59:11.303Z"
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
     },
     "rsprta/selfoss:latest": {
       "image": "rsprta/selfoss:latest",
