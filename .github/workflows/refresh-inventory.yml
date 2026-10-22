@@ -1,0 +1,44 @@
+name: Refresh all-language PHP inventory
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: php2shell-image-verification
+  cancel-in-progress: false
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: inventory-${{ github.run_id }}
+          restore-keys: inventory-
+      - run: npm ci
+      - name: Seed existing all-language discoveries
+        run: |
+          mkdir -p .cache
+          if test -f data/scope.json && ! test -f .cache/scope.json; then cp data/scope.json .cache/scope.json; fi
+      - run: node scripts/discover-php.mjs --budget 40
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: node scripts/refresh.mjs --budget 600
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Save public inventory
+        run: |
+          mkdir -p data
+          cp .cache/scope.json data/scope.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/data dist/licenses data/scope.json
+          if ! git diff --cached --quiet; then git commit -m 'Refresh all-language PHP component inventory'; git push; fi

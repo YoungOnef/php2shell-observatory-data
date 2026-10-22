@@ -1,0 +1,1 @@
+{"name":"php2shell-observatory","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"node scripts/serve.mjs","refresh":"node scripts/refresh.mjs","test":"node --test","check":"node --check dist/app.js && node --check scripts/refresh.mjs && node --check scripts/audit-docker.mjs"},"dependencies":{"yaml":"^2.8.1"},"engines":{"node":">=20"}}
