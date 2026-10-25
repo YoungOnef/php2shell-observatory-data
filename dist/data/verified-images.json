@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "advisoryKey": "c96c1d0430d41c3b4ecb70edf6419fec52ad1d7f7d8d70ab20829541f8575b97",
-  "generatedAt": "2026-10-25T16:47:29.874Z",
-  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/40213340181",
+  "generatedAt": "2026-10-25T21:12:30.743Z",
+  "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/40234343678",
   "images": {
     "nextcloud:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39994773694",
@@ -51,7 +51,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:14.883Z"
+      "tagCheckedAt": "2026-10-25T21:11:57.354Z"
     },
     "fireflyiii/core:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -107,7 +107,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:15.622Z"
+      "tagCheckedAt": "2026-10-25T21:11:57.903Z"
     },
     "matomo:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -156,7 +156,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:16.039Z"
+      "tagCheckedAt": "2026-10-25T21:11:58.226Z"
     },
     "wordpress:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -205,7 +205,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:16.441Z"
+      "tagCheckedAt": "2026-10-25T21:11:58.623Z"
     },
     "phanan/koel:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39994773694",
@@ -254,7 +254,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:16.826Z"
+      "tagCheckedAt": "2026-10-25T21:11:58.963Z"
     },
     "freshrss/freshrss:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -303,7 +303,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:17.234Z"
+      "tagCheckedAt": "2026-10-25T21:11:59.294Z"
     },
     "wallabag/wallabag:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/40164761600",
@@ -359,7 +359,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:17.634Z"
+      "tagCheckedAt": "2026-10-25T21:11:59.629Z"
     },
     "leantime/leantime:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -415,7 +415,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:18.033Z"
+      "tagCheckedAt": "2026-10-25T21:11:59.956Z"
     },
     "php:fpm": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -471,7 +471,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:18.454Z"
+      "tagCheckedAt": "2026-10-25T21:12:00.305Z"
     },
     "phpmyadmin:5.2.0": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -518,7 +518,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:18.877Z"
+      "tagCheckedAt": "2026-10-25T21:12:00.648Z"
     },
     "kanboard/kanboard:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -574,7 +574,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:19.274Z"
+      "tagCheckedAt": "2026-10-25T21:12:00.980Z"
     },
     "bellamy/wallos:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/40064455260",
@@ -630,7 +630,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:19.680Z"
+      "tagCheckedAt": "2026-10-25T21:12:01.366Z"
     },
     "privatebin/nginx-fpm-alpine:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/40164761600",
@@ -686,7 +686,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:20.093Z"
+      "tagCheckedAt": "2026-10-25T21:12:01.726Z"
     },
     "php:8-fpm": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -742,7 +742,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:20.498Z"
+      "tagCheckedAt": "2026-10-25T21:12:02.100Z"
     },
     "php:8.3-fpm": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -798,7 +798,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:20.924Z"
+      "tagCheckedAt": "2026-10-25T21:12:02.439Z"
     },
     "roundcube/roundcubemail:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39950279411",
@@ -847,7 +847,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:21.346Z"
+      "tagCheckedAt": "2026-10-25T21:12:02.772Z"
     },
     "thecodingmachine/php:8.1-v4-apache-node12": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -894,7 +894,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:21.750Z"
+      "tagCheckedAt": "2026-10-25T21:12:03.110Z"
     },
     "shlinkio/shlink:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -950,7 +950,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:22.202Z"
+      "tagCheckedAt": "2026-10-25T21:12:03.463Z"
     },
     "matomo:5.0-apache": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -999,7 +999,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:22.606Z"
+      "tagCheckedAt": "2026-10-25T21:12:03.791Z"
     },
     "joomla:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/40028134129",
@@ -1048,7 +1048,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:23.029Z"
+      "tagCheckedAt": "2026-10-25T21:12:04.266Z"
     },
     "phpmyadmin/phpmyadmin": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1097,22 +1097,22 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:23.445Z"
+      "tagCheckedAt": "2026-10-25T21:12:04.595Z"
     },
     "kimai/kimai2:apache": {
-      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
+      "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/40234343678",
       "assessmentKey": "c96c1d0430d41c3b4ecb70edf6419fec52ad1d7f7d8d70ab20829541f8575b97",
       "image": "kimai/kimai2:apache",
       "project": "kimai",
       "name": "Kimai",
-      "checkedAt": "2026-10-23T05:22:58.893Z",
+      "checkedAt": "2026-10-25T21:12:04.849Z",
       "status": "fixed",
       "platform": "linux/amd64",
       "scope": "Published image runtime binaries on linux/amd64; not the user’s running deployment.",
-      "digest": "sha256:5493f83b0f6378a0127c325b628faa40fa1654874117e15c5c32000b721ce0aa",
-      "immutable": "docker.io/kimai/kimai2@sha256:5493f83b0f6378a0127c325b628faa40fa1654874117e15c5c32000b721ce0aa",
-      "publishedAt": "2026-10-21T22:03:55.93974397Z",
-      "executionRef": "docker.io/kimai/kimai2@sha256:5493f83b0f6378a0127c325b628faa40fa1654874117e15c5c32000b721ce0aa",
+      "digest": "sha256:10796d56695966991159f5086875b04daf9b77d2c8bb0ba6555388a14ca03c84",
+      "immutable": "docker.io/kimai/kimai2@sha256:10796d56695966991159f5086875b04daf9b77d2c8bb0ba6555388a14ca03c84",
+      "publishedAt": "2026-10-25T18:52:30.105222897Z",
+      "executionRef": "docker.io/kimai/kimai2@sha256:10796d56695966991159f5086875b04daf9b77d2c8bb0ba6555388a14ca03c84",
       "webEvidence": {
         "web": {
           "version": "8.3.36",
@@ -1125,7 +1125,7 @@
         "packages": "",
         "workerConfig": null,
         "method": "Harmless PHP request through apache2handler",
-        "checkedAt": "2026-10-23T05:23:13.605Z"
+        "checkedAt": "2026-10-25T21:12:22.076Z"
       },
       "probeVersion": 2,
       "runtimes": [
@@ -1145,8 +1145,7 @@
           "requestVerified": true
         }
       ],
-      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:23.755Z"
+      "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs."
     },
     "phpmyadmin:5.2.1": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1195,7 +1194,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:24.163Z"
+      "tagCheckedAt": "2026-10-25T21:12:25.394Z"
     },
     "phpmyadmin": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1244,7 +1243,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:24.595Z"
+      "tagCheckedAt": "2026-10-25T21:12:26.011Z"
     },
     "linkstackorg/linkstack:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1293,7 +1292,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:25.005Z"
+      "tagCheckedAt": "2026-10-25T21:12:26.381Z"
     },
     "rsprta/selfoss:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1340,7 +1339,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:25.417Z"
+      "tagCheckedAt": "2026-10-25T21:12:26.809Z"
     },
     "wordpress:6.4.2-php8.1-apache": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1387,7 +1386,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:25.859Z"
+      "tagCheckedAt": "2026-10-25T21:12:27.177Z"
     },
     "phpmyadmin:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1436,7 +1435,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:26.308Z"
+      "tagCheckedAt": "2026-10-25T21:12:27.686Z"
     },
     "matomo:5.2.2-apache": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1485,7 +1484,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:26.724Z"
+      "tagCheckedAt": "2026-10-25T21:12:28.129Z"
     },
     "phpmyadmin/phpmyadmin:5.1.3": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1532,7 +1531,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:27.177Z"
+      "tagCheckedAt": "2026-10-25T21:12:28.540Z"
     },
     "phpmyadmin/phpmyadmin:5.0.1": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1579,7 +1578,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:27.478Z"
+      "tagCheckedAt": "2026-10-25T21:12:28.812Z"
     },
     "alcohol/php:8.3-xdebug": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1635,7 +1634,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:27.769Z"
+      "tagCheckedAt": "2026-10-25T21:12:29.081Z"
     },
     "php:8.3-rc-alpine3.18": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1688,7 +1687,7 @@
         }
       ],
       "reason": "A queried runtime is below the upstream PHP fix. No vendor backport has been automatically confirmed.",
-      "tagCheckedAt": "2026-10-25T16:47:28.247Z"
+      "tagCheckedAt": "2026-10-25T21:12:29.474Z"
     },
     "docker.io/library/phpmyadmin:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1737,7 +1736,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:28.678Z"
+      "tagCheckedAt": "2026-10-25T21:12:29.898Z"
     },
     "lscr.io/linuxserver/bookstack:latest": {
       "runUrl": "https://github.com/YoungOnef/php2shell-observatory-data/actions/runs/39904938233",
@@ -1794,7 +1793,7 @@
         }
       ],
       "reason": "All queried PHP runtime binaries meet the upstream fix versions for both CVEs.",
-      "tagCheckedAt": "2026-10-25T16:47:29.094Z"
+      "tagCheckedAt": "2026-10-25T21:12:30.269Z"
     }
   }
 }
